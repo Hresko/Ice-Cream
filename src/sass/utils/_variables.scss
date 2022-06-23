@@ -1,26 +1,28 @@
 :root {
-    // background
-    --color-background-main: #ffffff;
-    --color-background-second: #F7F7F7;
-    --color-background-accent: #191C26;
+    // fonts
+    --font-family-main: 'DM Sans',
+        sans-serif;
+    --font-family-title: 'Titan One',
+        cursive;
 
     // text
-    --color-text-main: #303030;
-    --color-text-second: #555555;
-    --color-text-white: #ffffff;
-    --color-text-light: #9DA4BD;
+    --cl-txt-main: #000000;
+    --cl-txt-second: #907E82;
+    --cl-txt-white: #ffffff;
+    --cl-txt-light: #E1E1E1;
+    --cl-txt-accent-light: #FFA5BA;
+    --cl-txt-accent-dark: #D41443;
 
-    // accent
-    --color-accent: #FF6C00;
-
-    // fonts
-    --font-family-main: 'Open Sans',
-        sans-serif;
-    --font-family-title: 'Raleway',
-        sans-serif;
+    // background
+    --bgc-main: #ffffff;
+    --bgc-second: #FAFAFA;
+    --bgc-accent-ice: #FFF5F6;
+    --bgc-accent-cream: #FFB8CA;
+    --bgc-accent-coffee: #F0D1A5;
+    --bgc-accent-shake: #C2E297;
 
     // transition
-    --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     --slow-anim: 200ms ease;
     --fast-anim: 400ms ease-in-out;
 }
