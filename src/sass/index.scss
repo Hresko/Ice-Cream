@@ -1,2 +1,19 @@
-@import './common';
-@import './example';
+// utils
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './utils/variables';
+
+// general styles
+
+// components
+
+// layuots
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/products';
+@import './layouts/about';
+@import './layouts/advantages';
+@import './layouts/gallery';
+@import './layouts/customer-review';
+@import './layouts/contacts';
+@import './layouts/footer';
