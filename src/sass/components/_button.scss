@@ -1,0 +1,18 @@
+.btn {
+    min-width: 160px;
+    height: 44px;
+    border-radius: 22px;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: var(--cl-txt-accent-dark);
+    background-color: var(--cl-txt-whit);
+
+    transition: color var(--anim), background-color var(--anim);
+
+    &:hover, &:focus {
+        color: var(--cl-txt-white);
+        background-color: var(--cl-txt-accent-dark);
+    }
+}

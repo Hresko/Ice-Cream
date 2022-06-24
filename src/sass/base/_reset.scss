@@ -33,3 +33,18 @@ img {
         color: var(--cl-txt-accent-dark);
     }
 }
+
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
