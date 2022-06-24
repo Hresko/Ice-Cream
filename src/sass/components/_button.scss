@@ -1,0 +1,16 @@
+.btn {
+    height: 44px;
+    border-radius: 22px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: var(--cl-txt-accent-dark);
+    padding: 0;
+
+    transition: color var(--anim), background-color var(--anim);
+
+    &:hover, &:focus {
+        color: var(--cl-txt-white);
+        background-color: var(--cl-txt-accent-dark);
+    }
+}
