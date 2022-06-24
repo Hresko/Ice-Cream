@@ -1,0 +1,63 @@
+<header class="header" id="header">
+    <div class="header__container container">
+        <a class="link" href="./index.html" aria-label="logo company">
+            <svg class="logo" alt="logo Ice Cream" width="199" height="50">
+                <use href="./images/sprite.svg#logo"></use>
+            </svg>
+        </a>
+        <nav class="navigation">
+            <ul class="navigation__list list">
+                <li class="navigation__item">
+                    <a class="navigation__link link navigation__link--current" href="#header" aria-label="Home">Home</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link link navigation__link" href="#hero" aria-label="About us">About
+                        us</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link link" href="#about" aria-label="How it’s made?">How it’s made?</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link link" href="#products" aria-label="Our products">Our products</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link link" href="#contact" aria-label="Contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="btn btn--mode-light" type="button" data-modal-open>Buy now</button>
+        <!-- ========= MOBILE MENU ===========-->
+        <div class="header__mobile-menu mobile-menu" id="mobile-menu" data-menu>
+            <nav class="mobile-menu__navigation">
+                <ul class="mobile-menu__navigation-list list">
+                    <li class="navigation__item">
+                        <a class="navigation__link link navigation__link--current" href="#header"
+                            aria-label="Home">Home</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link link navigation__link" href="#hero" aria-label="About us">About
+                            us</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__mobile-menu__link link" href="#about" aria-label="How it’s made?">How it’s
+                            made?</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link link" href="#products" aria-label="Our products">Our products</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__link link" href="#contact" aria-label="Contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn btn--mode-light" type="button" data-modal-open>Buy now</button>
+        </div>
+        <button class="mobile-btn" type="button" aria-label="Switch mobile menu" aria-expanded="false"
+            aria-controls="mobile-menu" data-menu-button>
+            <svg class="mobile-btn__icon" width="20" height="20">
+                <use class="mobile-btn__icon-open" href="./images/sprite.svg#menu"></use>
+                <use class="mobile-btn__icon-close" href="./images/sprite.svg#close"></use>
+            </svg>
+        </button>
+    </div>
+</header>
