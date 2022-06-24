@@ -1,0 +1,80 @@
+.header {
+
+    &.js-no-transparency {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        z-index: 10;
+        background-color: var(--cl-txt-accent-dark);
+
+        & .mobile-btn {
+            top: 20px;
+        }
+
+        & .logo {
+            margin-top: 8px;
+        }
+    }
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    text-align: left;
+}
+
+// ========== logo ==========
+
+.logo {
+    margin-top: 8px;
+
+    @include mq(tablet) {
+        margin-top: 32px;
+    }
+
+    @include mq(desktop) {
+        margin-top: 37px;
+    }
+}
+
+// ========== navigation ==========
+
+.navigation__list {
+    display: none;
+
+    @include mq(desktop) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.navigation__item {
+
+    &:not(:last-child) {
+        margin-right: 35px;
+    }
+}
+
+.navigation__link {
+    display: flex;
+    align-items: center;
+
+    padding-top: 52px;
+    padding-bottom: 52px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+
+    color: var(--cl-txt-white);
+}
+
+.navigation__link--current {
+    color: var(--cl-txt-accent-dark);
+}
+
+//  ========== button ==========

@@ -1,0 +1,160 @@
+// mobile menu
+.header__mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 11;
+
+    max-width: 337px;
+    height: 100vh;
+    padding-top: 118px;
+    padding-right: 105px;
+    padding-left: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    transform: translateX(100%);
+    transition: transform var(--anim);
+
+    background-color: var(--bgc-main);
+
+    visibility: hidden;
+    overflow-y: scroll;
+
+    &.is-open {
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    @include mq(desktop) {
+        display: none;
+    }
+
+    & .btn {
+        margin-bottom: 64px;
+    }
+}
+
+// mobile button
+.mobile-btn {
+    position: absolute;
+    top: 48px;
+    right: 31px;
+    z-index: 11;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    width: 40px;
+    height: 40px;
+
+    color: var(--cl-txt-main);
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+    transition: color var(--anim);
+
+    &:hover,
+    &:focus {
+        color: var(--cl-txt-accent-dark);
+    }
+
+    &.is-open {
+        position: fixed;
+        overflow-y: scroll;
+    }
+
+    @include mq(desktop) {
+        display: none;
+    }
+}
+
+.mobile-btn__icon {
+    fill: currentColor;
+}
+
+.mobile-btn__icon-open {
+    display: block;
+
+    .mobile-btn.is-open & {
+        display: none;
+    }
+}
+
+.mobile-btn__icon-close {
+    display: none;
+
+    .mobile-btn.is-open & {
+        position: fixed;
+        display: block;
+    }
+}
+
+//mobile navigation
+.mobile-menu__navigation {
+    margin-bottom: 64px;
+}
+
+.mobile-menu__navigation-item {
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+
+.mobile-menu__navigation-link {
+    display: flex;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: 0.01em;
+
+    transition: color var(--anim);
+}
+
+.mobile-menu__navigation-link--active {
+    color: var(--cl-txt-accent-dark);
+}
+
+//mobile contacts
+.contacts__phone {
+    margin-bottom: 24px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: 0.01em;
+
+    transition: color var(--anim);
+}
+
+//mobile socials
+.mobile-menu__socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    &::before {
+        margin-bottom: 24px;
+    }
+
+    & .socials__item {
+        &:first-child {
+            margin-right: 0;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+
+        & .socials__link {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1.36;
+        }
+    }
+}
