@@ -7,14 +7,28 @@
     }
 
     &__item {
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
+        width: 34px;
+        height: 34px;
     }
 
     &__icon {
-        width: 32px;
-        height: 32px;
-        fill: var(--cl-txt-accent-light);
+        max-width: 19px;
+        max-height: 19px;
+        fill: var(--cl-txt-white);
+    }
+
+    &__link {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--cl-txt-accent-light);
+        border-radius: 50%;
+
+        &:hover,
+        &:focus {
+            background-color: var(--cl-txt-accent-dark);
+            outline: none;
+        }
     }
 }
