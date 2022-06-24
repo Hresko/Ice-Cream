@@ -1,0 +1,45 @@
+.section {
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+// section title group
+
+// <p>
+.uppertitle {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 15px;
+
+    font-family: var(--font-family-title);
+    font-size: 30px;
+    line-height: 1.13;
+    text-transform: uppercase;
+
+    color: var(--cl-txt-accent-light);
+}
+
+// <h2>
+.section-title {
+    font-family: var(--font-family-title);
+    font-size: 34px;
+    line-height: 1.15;
+    text-transform: uppercase;
+
+    color: var(--cl-txt-accent-dark);
+}
+
+// <p>
+
+// <p>
+.description {
+    margin-bottom: 40px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    letter-spacing: 0.02em;
+}
