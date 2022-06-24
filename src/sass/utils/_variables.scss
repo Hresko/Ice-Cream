@@ -1,0 +1,28 @@
+:root {
+    // fonts
+    --font-family-main: 'DM Sans',
+        sans-serif;
+    --font-family-title: 'Titan One',
+        cursive;
+
+    // text
+    --cl-txt-main: #000000;
+    --cl-txt-second: #907E82;
+    --cl-txt-white: #ffffff;
+    --cl-txt-light: #E1E1E1;
+    --cl-txt-accent-light: #FFA5BA;
+    --cl-txt-accent-dark: #D41443;
+
+    // background
+    --bgc-main: #ffffff;
+    --bgc-second: #FAFAFA;
+    --bgc-accent-ice: #FFF5F6;
+    --bgc-accent-cream: #FFB8CA;
+    --bgc-accent-coffee: #F0D1A5;
+    --bgc-accent-shake: #C2E297;
+
+    // transition
+    --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --slow-anim: 200ms ease;
+    --fast-anim: 400ms ease-in-out;
+}
