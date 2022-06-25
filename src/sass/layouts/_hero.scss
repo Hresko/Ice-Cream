@@ -285,6 +285,8 @@ position: relative;
     margin: 41px 0px 7px 0px;
     text-align: left;
 
+    overflow: auto;
+
     font-family: var(--font-family-main);
     font-weight: 400;
     font-size: 8px;
@@ -298,6 +300,10 @@ position: relative;
         margin: 68px 0px 20px 0px;
         font-size: 14px;
         line-height: 1.4;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
     }
 }
 
