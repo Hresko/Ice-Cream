@@ -1,10 +1,10 @@
 .header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
 
     &.js-no-transparency {
-        position: fixed;
-        top: 0;
-        width: 100vw;
-        z-index: 10;
         background-color: var(--bgc-menu);
 
         & .mobile-btn {
@@ -12,7 +12,7 @@
         }
 
         & .logo {
-            margin-top: 8px;
+            margin-top: 20px;
         }
     }
 }
