@@ -64,14 +64,3 @@ function setActiveLink(arr) {
 
 // ========= animations =========
 AOS.init();
-
-
-
-// ===== Masonry ======= \\
-import Masonry from 'masonry-layout';
-
-window.onload = () => {
-  const grid = document.querySelector('.grid');
-
-  const masonry = new Masonry (grid);
-};
