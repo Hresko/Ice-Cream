@@ -1,21 +1,10 @@
 .footer {
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 40px;
     background-color: var(--bgc-accent-ice);
 
-    &__btn-wrap {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 40px;
-    }
-
-    & .btn + .btn {
-        margin-top: 10px;
-    }
-
     &__adaptive-wrap {
-        margin-bottom: 60px;
+        // margin-bottom: 60px;
         display: flex;
         flex-direction: column;
     }
@@ -74,6 +63,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color: var(--bgc-accent-ice);
 
         & p {
             font-weight: 700;
