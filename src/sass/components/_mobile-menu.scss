@@ -4,7 +4,7 @@
     right: 0;
     z-index: 11;
 
-    width: 320px;
+    width: 250px;
     height: 100vh;
     padding-top: 60px;
     padding-right: 20px;
@@ -24,6 +24,11 @@
     &.is-open {
         visibility: visible;
         transform: translateX(0);
+    }
+
+    @include mq(tablet) {
+        width: 255px;
+        padding-top: 84px;
     }
 
     @include mq(desktop) {
@@ -67,6 +72,10 @@
         overflow-y: scroll;
     }
 
+    @include mq(tablet) {
+        top: 40px;
+    }
+
     @include mq(desktop) {
         display: none;
     }
@@ -105,9 +114,12 @@
         &:not(:last-child) {
             margin-bottom: 24px;
         }
+
+
     }
 
     & .navigation__link {
+        position: relative;
         display: flex;
         padding: 0;
 
@@ -116,6 +128,32 @@
         line-height: 1.28;
 
         transition: color var(--anim);
+
+        &::before {
+            position: absolute;
+            content: ' ';
+            top: -11px;
+            left: -20px;
+
+            height: 1px;
+            width: 250px;
+
+            background-color: #E18298;
+        }
+
+        &:last-child {
+            &::after {
+                position: absolute;
+                content: ' ';
+                bottom: -11px;
+                left: -20px;
+
+                height: 1px;
+                width: 250px;
+
+                background-color: #E18298;
+            }
+        }
     }
 
     & .navigation__link--current {

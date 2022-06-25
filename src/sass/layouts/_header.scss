@@ -1,18 +1,18 @@
 .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 
     &.js-no-transparency {
-        position: fixed;
-        top: 0;
-        width: 100vw;
-        z-index: 10;
-        background-color: var(--bgc-menu);
+        background-color: rgba(255, 184, 202, 0.75);
 
         & .mobile-btn {
             top: 20px;
-        }
 
-        & .logo {
-            margin-top: 8px;
+            @include mq(tablet) {
+                top: 40px;
+            }
         }
     }
 }
@@ -23,23 +23,46 @@
     justify-content: space-between;
     align-content: center;
     text-align: left;
+
+    @include mq(mobile) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    @include mq(tablet-only) {
+        height: 85px;
+        justify-content: space-around;
+        padding-bottom: 16px;
+    }
+
+    @include mq(desktop) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 // ========== logo ==========
 
 .logo {
-    margin-top: 8px;
+    position: absolute;
+    top: 8px;
+    left: 20px;
 
     @include mq(tablet) {
-        margin-top: 32px;
+        top: 32px;
+        left: 32px;
     }
 
     @include mq(desktop) {
-        margin-top: 37px;
+        top: 35px;
+        left: 40px;
     }
 }
 
 // ========== navigation ==========
+.navigation {
+    margin-left: 200px;
+}
 
 .navigation__list {
     display: none;
@@ -82,5 +105,13 @@
 
     @include mq(tablet) {
         display: inline-block;
+        position: absolute;
+        top: 31px;
+        right: 83px;
+        z-index: 11;
+    }
+
+    @include mq(desktop) {
+        position: static;
     }
 }

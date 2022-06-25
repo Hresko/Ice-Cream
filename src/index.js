@@ -30,7 +30,6 @@ function changeHeaderBackground() {
     !expanded &&
       setActiveLink(document.querySelectorAll('.modal-menu__navigation-link'));
   });
-  menuBtnRef.addEventListener('click', toggleBurgerMenu);
 })();
 
 // Fixed window when modal opened
