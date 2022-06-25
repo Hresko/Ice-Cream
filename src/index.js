@@ -1,3 +1,4 @@
+
 // ========= header - scroll =========
 window.onscroll = () => changeHeaderBackground();
 
@@ -53,15 +54,6 @@ function setActiveLink(arr) {
   }
 }
 
-function setActiveLink(arr) {
-  for (let index = 0; index < arr.length; index++) {
-    const element = arr[index];
-
-    if (element.href === window.location.href) {
-      element.classList.add('active-nav-link');
-    }
-  }
-}
 
 // ========= animations =========
 AOS.init();
@@ -69,10 +61,4 @@ AOS.init();
 
 
 // ===== Masonry ======= \\
-import Masonry from 'masonry-layout';
 
-window.onload = () => {
-  const grid = document.querySelector('.grid');
-
-  const masonry = new Masonry (grid);
-};
