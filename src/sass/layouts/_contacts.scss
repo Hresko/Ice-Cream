@@ -1,30 +1,45 @@
 
 .contact {
-    
+    align-items: center;
     list-style: none;
-   
+
+    @include mq(tablet) {
+        display: flex;
+    }
+
+    @include mq(desktop) {
+        display: flex;
+    } 
 }
 
 .contact__item {
+
     position: relative;
-    width: 280px;
-    height: 412px;
     padding: 40px 32px;
     background: var(--cl-txt-white);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
 
     @include mq(tablet) {
-        width: 100%;  
+        margin-bottom: 22px;
     }
 
     @include mq(desktop) {
-       
+        margin-bottom: 22px;
     }
 }
 
 .contact__item:not(:last-child) {
-    margin-bottom: 22px;
+    @include mq(mobile) {
+        margin-bottom: 22px;
+    }
+    @include mq(tablet) {
+        margin-right: 32px;
+    }
+
+    @include mq(desktop) {
+        margin-right: 32px;
+    }
 }
 
 .contact__point {
@@ -91,13 +106,24 @@
     content: "";
     position: absolute;
     margin-top: 12px;
-    width: 216px;
     height: 0px;
     color: rgba(225, 225, 225, 1);
     border: 1px solid #E1E1E1;
+
+    @include mq(mobile) {
+        width: 216px;
+    }
+
+    @include mq(tablet) {
+        width: 160px;
+    }
+
+    @include mq(desktop) {
+        width: 288px;
+    }
 }
 
-.contact__dates {
+.contact-dates {
     margin-bottom: 48px;
     &::after {
         content: "";
@@ -107,6 +133,18 @@
         height: 0px;
         color: rgba(225, 225, 225, 1);
         border: 1px solid #E1E1E1;
+
+        @include mq(mobile) {
+            width: 216px;
+        }
+    
+        @include mq(tablet) {
+            width: 160px;
+        }
+    
+        @include mq(desktop) {
+            width: 288px;
+        }
     }
 }
 
@@ -114,7 +152,7 @@
     color: var(--cl-txt-accent-light);
 }
 
-.contact__date__item:not(:last-child){
+.contact-date__item:not(:last-child){
     margin-bottom: 8px;
 }
 
@@ -150,26 +188,50 @@
     }
 }
 
-.contact__call__item:not(:last-child) {
+.contact-call__item:not(:last-child) {
     margin-bottom: 8px;
 }
 
-.contact__info {
+.contact-info {
+    justify-content: center;
+    align-items: center;
     margin-top: 32px;
     margin-bottom: 40px;
+
+    @include mq(tablet) {
+        display: flex;
+    }
 }
 
-.contact__info__item:not(:last-child) {
+.contact-info__item {
     margin-bottom: 10px;
 }
 
+.contact-info__item:not(:last-child) {
+
+    @include mq(mobile) {
+        margin-bottom: 10px;
+    }
+
+    @include mq(tablet) {
+        margin-right: 14.5px;
+    }
+
+    @include mq(desktop) {
+        margin-right: 12px;
+    }
+}
+
 .contact__btn {
+    display: flex;
     margin: auto;
-    display: block;
+    padding: 0;
     min-width: 160px;
     height: 44px;
     border-radius: 22px;
-    padding: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     outline: none;
     border: none;
