@@ -8,21 +8,30 @@
     outline: none;
     border: none;
     color: var(--cl-txt-accent-dark);
-    background-color: var(--cl-txt-whit);
+    background-color: var(--cl-txt-white);
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    text-align: center;
 
     transition: color var(--anim), background-color var(--anim);
 
     &:hover, &:focus {
-        color: var(--cl-txt-white);
-        background-color: var(--cl-txt-accent-dark);
+        // color: var(--cl-txt-white);
+        background-color: var(--bgc-hover);
     }
 
     &::after {
         content: '';
         display: inline-block;
-        width: 8px;
-        height: 4px;
+        width: 9px;
+        height: 9px;
+        margin-left: 13px;
         background-image: url(/src/images/icons/pointer.svg);
         background-size: contain;
+        background-repeat: no-repeat;
+        fill: var(--cl-txt-accent-dark);
     }
 }
