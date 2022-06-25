@@ -1,0 +1,46 @@
+
+.contact {
+    
+    list-style: none;
+   
+}
+
+.contact_item {
+    padding: 40px 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+
+    @include mq(tablet) {
+        width: 100%;  
+    }
+
+    @include mq(desktop) {
+       
+    }
+}
+
+.contact_call_item {
+    text-decoration: none;
+    
+
+}
+
+.contact_btn {
+    display: inline-block;
+    padding: 6px 22px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border: 4px solid transparent;
+    color: #FFFFFF;
+    background-color: #F0D1A5;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    border: none;
+}
