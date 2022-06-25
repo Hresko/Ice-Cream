@@ -1,0 +1,72 @@
+p, li, ul{
+    padding: 0;
+        margin: 0;
+}
+
+li {
+    list-style-type: none;
+
+}
+
+
+.advantages {
+    padding-left: 22px;
+    padding-top: 40px;
+    background-color: var(--bgc-accent-ice);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+.advantages-list__item{
+    margin-bottom: 32px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.advantages-list__title{
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 41px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    
+        color: var(--cl-txt-accent-dark);
+
+        margin-top: 16px;
+        margin-bottom: 4px;
+
+        transition: var(--slow-anim);
+
+}
+
+.advantages-list__text{
+    width: 230px;
+        height: 36px;
+        
+    
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 170%;
+        
+    
+    
+        color: var(--cl-txt-main);
+
+}
