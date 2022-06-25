@@ -1,5 +1,6 @@
 .btn {
     min-width: 160px;
+    max-width: 190px;
     height: 44px;
     border-radius: 22px;
     padding: 0;
@@ -14,5 +15,14 @@
     &:hover, &:focus {
         color: var(--cl-txt-white);
         background-color: var(--cl-txt-accent-dark);
+    }
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 4px;
+        background-image: url(/src/images/icons/pointer.svg);
+        background-size: contain;
     }
 }
