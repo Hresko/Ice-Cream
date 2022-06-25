@@ -33,5 +33,10 @@
         background-size: contain;
         background-repeat: no-repeat;
         fill: var(--cl-txt-accent-dark);
+
+    &:hover,
+    &:focus {
+        color: var(--cl-txt-white);
+        background-color: var(--cl-txt-accent-dark);
     }
 }

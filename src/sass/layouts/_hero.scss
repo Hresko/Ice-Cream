@@ -1,47 +1,97 @@
 .hero {
+    position: relative;
+
+    overflow: hidden;
+
     background-color: var(--bgc-accent-cream);
 
-    padding-top: 140px;
+    padding-top: 194px;
     padding-bottom: 160px;
 
+    height: 502;
+
     @include mq(tablet) {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 102px;
+        padding-bottom: 16px;
+
+        height: 416px;
     }
 
+    @include mq(desktop) {
+        padding-top: 147px;
+        padding-bottom: 60px;
+
+        height: 664px;
+    }
 }
 
 .hero__container {
-    position: relative;
+position: relative;
 }
 
 .hero__title-points {
-display: flex;
-align-items: baseline;
-justify-content: space-between;
+    z-index: 2;
+    position: relative;
 
-margin-bottom: 40px;
+    @include mq(tablet) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+
+        margin-bottom: 20px;
+    }
+
+    @include mq(desktop) {
+        margin-bottom: 40px;
+    }
 }
 
 .hero__title {
+
     font-family: var(--font-family-title);
     font-weight: 400;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    font-size: 38px;
-    line-height: 1.158;
+    font-size: 26px;
+    line-height: 1.154;
     
     color: var(--cl-txt-white);
+    
+    width: 218px;
+    height: 106px;
+
+@include mq(tablet) {
+    font-size: 22px;
+    line-height: 1.136;
+
+    width: 162px;
+    height: 80px;
+    }
+
+@include mq(desktop) {
+    font-size: 38px;
+    line-height: 1.158;
 
     width: 277px;
     height: 137px;
 }
 
+}
+
 .hero__subtitle {
-    font-size: 58px;
-    line-height: 0.905;
+    font-size: 48px;
+    line-height: 0.965;
 
     color: var(--cl-txt-accent-dark);
+
+    @include mq(tablet) {
+        font-size: 34px;
+        line-height: 0.905;
+    }
+
+    @include mq(desktop) {
+        font-size: 58px;
+    }
 }
 
 .hero__list-anchors {
@@ -49,21 +99,29 @@ margin-bottom: 40px;
     align-items: center;
     justify-content: flex-start;
 
-    margin-top: 24px;
-    gap: 12px;
+    margin-top: 20px;
+    gap: 8px;
 
+    @include mq(desktop) {
+        margin-top: 24px;
+        gap: 12px;
+    }
 }
 
 .hero__item-anchor {
-    height: 40px;
+    height: 24px;
     width: auto;
-    padding: 11 23;
+    padding: 7 14;
     border-radius: 20px;
+
+    position: relative;
+
+    z-index: 3;
 
     font-family: var(--font-family-main);
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.286;
+    font-size: 8px;
+    line-height: 1.25;
 
     transition: background-color var(--anim), color var(--anim);
 
@@ -82,6 +140,14 @@ margin-bottom: 40px;
 
             transition: background-color var(--anim), color var(--anim);
         }
+
+        @include mq(desktop) {
+            height: 40px;
+            padding: 11 23;
+
+            font-size: 14px;
+            line-height: 1.286;
+        }
 }
 
 .hero__list-points {
@@ -91,39 +157,55 @@ margin-bottom: 40px;
 }
 
 .hero__item-point {
-position: relative;
+    position: relative;
 
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-padding-right: 14px;
+    padding-right: 10px;
+
+    @include mq(desktop) {
+        padding-right: 18px;
+    }
 
     &:not(:last-child) {
+        margin-bottom: 16px;
+
+        @include mq(desktop) {
             margin-bottom: 18px;
         }
+    }
 
     &::before {
         content: "";
 
         position: absolute;
-        top: -4;
+        top: -2;
         right: 0;
 
         border-radius: 50%;
-        width: 30px;
-        height: 30px;
+        width: 16px;
+        height: 16px;
 
         background-color: var(--cl-txt-white);
 
-        z-index: 100;
+        z-index: 8;
+
+        @include mq(desktop) {
+            top: -4;
+            right: 0;
+        
+            width: 30px;
+            height: 30px;
+        }
     }
 }
 
 .hero__point-qty {
     font-family: var(--font-family-title);
     font-weight: 400;
-    font-size: 46px;
-    line-height: 1.152;
+    font-size: 28px;
+    line-height: 1.145;
 
     text-align: right;
     letter-spacing: 0.04em;
@@ -131,7 +213,11 @@ padding-right: 14px;
 
     color: var(--cl-txt-accent-dark);
 
-    z-index: 101;
+    z-index: 9;
+
+    @include mq(desktop) {
+        font-size: 46px;
+        line-height: 1.152;    }
 }
 
 .hero__point-type {
@@ -139,17 +225,21 @@ padding-right: 14px;
 
     font-family: var(--font-family-main);
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.286;
+    font-size: 8px;
+    line-height: 1.25;
     text-align: right;
 
     color: var(--cl-txt-white);
+
+    @include mq(desktop) {
+        font-size: 14px;
+        line-height: 1.286;    }
 }
 
 .slider {
     width: 100%;
-    max-width: 413px;
-    height: 216px;
+    max-width: 266px;
+    height: 154px;
     text-align: left;
     overflow: hidden;
     position: relative;
@@ -157,6 +247,12 @@ padding-right: 14px;
     @include mq(mobile-only) {
         display: none;
     }
+
+    @include mq(desktop) {
+        max-width: 413px;
+        height: 216px;
+    }
+
 }
 
 .slider__list {
@@ -170,25 +266,39 @@ padding-right: 14px;
 .slider__item {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-shrink: 0;
     width: 100%;
-    height: 216px;
+    height: 154px;
     scroll-snap-align: center;
+    transform-origin: center center;
+    transform: scale(1);
+
+    @include mq(desktop) {
+        height: 216px;
+    }
 }
 
 .slider__text {
-    width: 200px;
-    height: 78px;
+    width: 114px;
+    height: 48px;
+    margin: 41px 0px 7px 0px;
     text-align: left;
-
 
     font-family: var(--font-family-main);
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.4;
+    font-size: 8px;
+    line-height: 1.5;
     
     color: var(--cl-txt-white);
+
+    @include mq(desktop) {
+        width: 200px;
+        height: 78px;
+        margin: 68px 0px 20px 0px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
 }
 
 .slider__btn {
@@ -196,13 +306,18 @@ padding-right: 14px;
     justify-content: center;
     align-items: center;
 
-    height: 26px;
-    width: 26px;
+    height: 18px;
+    width: 18px;
     border-radius: 50px;
 
     background-color: var(--cl-txt-white);
 
     transition: background-color var(--anim), color var(--anim);
+
+    @include mq(desktop) {
+        height: 26px;
+        width: 26px;
+    }
 
     &:hover, &:focus {
         background-color: var(--bgc-hover);
@@ -213,27 +328,53 @@ padding-right: 14px;
 
 .slider__icon {
     fill: var(--cl-txt-accent-dark);
+
+    @include mq(desktop) {
+        height: 10px;
+        width: 10px;
+    }
 }
 
 .slider__img {
-    width: 213px;
-    height: 216px;
+    width: 152px;
+    height: 154px;
+
+    @include mq(desktop) {
+        width: 213px;
+        height: 216px;
+    }
 }
 
 .hero__bg-ellipse {
     position: absolute;
-    right: 133;
-    bottom: 17;
+    right: -82;
+    bottom: -85;
 
-    width: 534px;
-    height: 534px;
+    z-index: 0;
+
+    width: 344px;
+    height: 344px;
     border-radius: 50%;
 
     background-color: var(--cl-txt-accent-light);
 
     animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 
-    transition: animation var(--anim);
+    @include mq(tablet) {
+        right: 153;
+        bottom: 40;
+
+        width: 333px;
+        height: 333px;
+    }
+
+    @include mq(desktop) {
+        right: 133;
+        bottom: 77;
+
+        width: 534px;
+        height: 534px;
+    }
 }
 
 @keyframes scale-up-center {
@@ -248,29 +389,34 @@ padding-right: 14px;
     }
 }
 
-// .hero__icecream-img {
-//     position: absolute;
-//     right: 312;
-//     bottom: -60;
-
-//     animation: slide-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-// }
-
-// @keyframes slide-bottom {
-//     0% {
-//         transform: translateY(-500);
-//     }
-
-//     100% {
-//         transform: translateY(0px);
-//     }
-// }
-
-.hero__icecream-img-7 {
+.hero__icecream-img {
     position: absolute;
-    right: 312;
-    bottom: -60;
+    right: 32;
+    bottom: -160;
+    z-index: 1;
 
+    width: 171px;
+    height: 410px;
+
+    @include mq(tablet) {
+        right: 303;
+        bottom: -16;
+
+        width: 143px;
+        height: 336px;
+    }
+    
+    @include mq(desktop) {
+        right: 312;
+        bottom: -60;
+
+        width: 236px;
+        height: 557px;
+    }
+
+}
+
+.hero__icecream-img--7 {
     animation: slide-bottom7 2000ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
@@ -286,11 +432,7 @@ padding-right: 14px;
     }
 }
 
-.hero__icecream-img-6 {
-    position: absolute;
-    right: 312;
-    bottom: -60;
-
+.hero__icecream-img--6 {
     animation: slide-bottom6 2100ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
@@ -305,11 +447,7 @@ padding-right: 14px;
         opacity: 1;
     }
 }
-.hero__icecream-img-5 {
-    position: absolute;
-    right: 312;
-    bottom: -60;
-
+.hero__icecream-img--5 {
     animation: slide-bottom5 2200ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
@@ -325,11 +463,7 @@ padding-right: 14px;
     }
 }
 
-.hero__icecream-img-4 {
-    position: absolute;
-    right: 312;
-    bottom: -60;
-
+.hero__icecream-img--4 {
     animation: slide-bottom4 2300ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
@@ -345,11 +479,7 @@ padding-right: 14px;
     }
 }
 
-.hero__icecream-img-3 {
-    position: absolute;
-    right: 312;
-    bottom: -60;
-
+.hero__icecream-img--3 {
     animation: slide-bottom3 2400ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
@@ -365,11 +495,7 @@ padding-right: 14px;
     }
 }
 
-.hero__icecream-img-2 {
-    position: absolute;
-    right: 312;
-    bottom: -60;
-
+.hero__icecream-img--2 {
     animation: slide-bottom2 2500ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
@@ -385,11 +511,7 @@ padding-right: 14px;
     }
 }
 
-.hero__icecream-img-1 {
-    position: absolute;
-    right: 312;
-    bottom: -60;
-
+.hero__icecream-img--1 {
     animation: slide-bottom1 2600ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
@@ -408,8 +530,12 @@ padding-right: 14px;
 
 .hero__girl-img  {
     position: absolute;
-    right: 0;
-    bottom: -60;
+    right: 32;
+    bottom: -16;
+
+
+    width: 190px;
+    height: 150px;
 
 
     &:hover, &focus {
@@ -418,6 +544,14 @@ padding-right: 14px;
 
     @include mq(mobile-only) {
         display: none;
+    }
+
+    @include mq(desktop) {
+        right: 16;
+        bottom: -60;
+
+        width: 304px;
+        height: 241px;
     }
 }
 
