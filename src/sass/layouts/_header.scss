@@ -5,7 +5,7 @@
         top: 0;
         width: 100vw;
         z-index: 10;
-        background-color: var(--cl-txt-accent-dark);
+        background-color: var(--bgc-menu);
 
         & .mobile-btn {
             top: 20px;
@@ -65,10 +65,9 @@
     padding-top: 52px;
     padding-bottom: 52px;
 
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.1em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
 
     color: var(--cl-txt-white);
 }
@@ -78,3 +77,10 @@
 }
 
 //  ========== button ==========
+.header__btn {
+    display: none;
+
+    @include mq(tablet) {
+        display: inline-block;
+    }
+}

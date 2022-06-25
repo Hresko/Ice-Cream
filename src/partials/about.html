@@ -1,0 +1,83 @@
+<section class="about" id="about">
+  <div class="container about-container">
+    <p class="label-title">tradition and love</p>
+    <h2 class="section-title about__section-title">how it’s made?</h2>
+    <picture>
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ../src/images/about/webp/about-milk__lg.webp    1x,
+          ../src/images/about/webp/about-milk__lg@2x.webp 2x
+        "
+        type="image/png"
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ../src/images/about/about-milk__lg.png    1x,
+          ../src/images/about/about-milk__lg@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Для таблет -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../src/images/about/webp/about-milk__md.webp    1x,
+          ../src/images/about/webp/about-milk__md@2x.webp 2x
+        "
+        type="image/png"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../src/images/about/about-milk__md.png    1x,
+          ../src/images/about/about-milk__md@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Для мобільної -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ../src/images/about/webp/about-milk__sm.webp    1x,
+          ../src/images/about/webp/about-milk__sm@2x.webp 2x
+        "
+        type="image/png"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ../src/images/about/about-milk__sm.png    1x,
+         ../src/images/about/about-milk__sm@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        class="about-img"
+        src="../src/images/about/about-milk__sm.png"
+        alt="сarafe of milk and cow"
+        width="280"
+        height="279"
+        loading="lazy"
+      />
+    </picture>
+    <p class="about__description about__description--bold">
+      Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+      cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo
+      fringilla.
+    </p>
+    <p class="about__description about__description--pre">
+      Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+      Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+      suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+      tincidunt. Aliquam erat volutpat. Aenean accumsan.
+    </p>
+    <button class="about-button" type="button">
+        Read more
+      <svg class="about-button__icon" width="7" height="10">
+        <use href="../src/images/sprite.svg#pointer"></use>
+      </svg>
+    </button>
+  </div>
+</section>
