@@ -9,20 +9,16 @@
     border: none;
     color: var(--cl-txt-accent-dark);
     background-color: var(--cl-txt-white);
-
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
     text-align: center;
-
     transition: color var(--anim), background-color var(--anim);
-
     &:hover, &:focus {
         // color: var(--cl-txt-white);
         background-color: var(--bgc-hover);
     }
-
     &::after {
         content: '';
         display: inline-block;
@@ -33,10 +29,10 @@
         background-size: contain;
         background-repeat: no-repeat;
         fill: var(--cl-txt-accent-dark);
-
-    &:hover,
-    &:focus {
-        color: var(--cl-txt-white);
-        background-color: var(--cl-txt-accent-dark);
+        &:hover,
+        &:focus {
+            color: var(--cl-txt-white);
+            background-color: var(--cl-txt-accent-dark);
+        }
     }
 }
