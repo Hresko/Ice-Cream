@@ -30,7 +30,6 @@ function changeHeaderBackground() {
     !expanded &&
       setActiveLink(document.querySelectorAll('.modal-menu__navigation-link'));
   });
-  menuBtnRef.addEventListener('click', toggleBurgerMenu);
 })();
 
 // Fixed window when modal opened
@@ -65,3 +64,14 @@ function setActiveLink(arr) {
 
 // ========= animations =========
 AOS.init();
+
+
+
+// ===== Masonry ======= \\
+import Masonry from 'masonry-layout';
+
+window.onload = () => {
+  const grid = document.querySelector('.grid');
+
+  const masonry = new Masonry (grid);
+};
