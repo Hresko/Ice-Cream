@@ -75,7 +75,7 @@
           suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
           tincidunt. <span class="about__description about__description--pre ">Aliquam erat volutpat. Aenean accumsan.</span> 
         </p>
-        <button class="about-button" type="button">
+        <button class="about-button" type="button" about-modal-open>
           Read more
           <svg class="about-button__icon" width="8" height="11">
             <use href="../src/images/sprite.svg#pointer"></use>
@@ -84,4 +84,39 @@
       </div>
     </div>
   </div>
+  
+  <div class="about-backdrop is-hidden" data-modal>
+    <div class="about-modal-wrapper">
+        <button class="about-btn-close" type="button" data-modal-close aria-label="Закрыть">
+          <svg class="about-btn-close__icon" width="20" height="20">
+            <use href="./images/sprite.svg#close"></use>
+        </svg>
+        </button>
+        <h2 class="section-title section-title__md ">Ice cream production</h2>
+        <p class="label-title">Main ingredient is love</p>
+        <ul class="list">
+            <li class="item about-item">
+                <p class="description-img">Grazing cows</p>
+                <img class="mod-img" src="/src/images/about/photo-cows__sm.jpg" width="280"  >
+                
+            </li>
+            <li class="item about-item">
+                <p class="description-img">Milk collection</p>
+                <img class="mod-img" src="/src/images/about/photo-milk__sm.jpg" >
+                
+            </li>
+            <li class="item about-item">
+                <p class="description-img">Secret recipe</p>
+                <img class="mod-img" src="/src/images/about/photo-kitchen__sm.jpg" >
+                
+            </li>
+            <li class="item about-item">
+                <p class="description-img">Selling</p>
+                <img class="mod-img" src="/src/images/about/photo-ice-cream__sm.jpg" >
+                
+            </li>
+        </ul>
+
+    </div>
+</div>
 </section>
