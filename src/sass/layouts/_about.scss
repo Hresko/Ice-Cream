@@ -230,6 +230,16 @@
     margin-left:auto;
     border: none;
     background-color: transparent ;
+
+    &:hover, &:focus {
+        fill: var(--cl-txt-accent-dark);
+    }
+  }
+
+  .about-btn-close__icon {
+    &:hover, &:focus {
+        fill: var(--cl-txt-accent-dark);
+    }
   }
 
   .section-title__md{
