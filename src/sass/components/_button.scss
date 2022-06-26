@@ -16,7 +16,6 @@
     text-align: center;
     transition: color var(--anim), background-color var(--anim);
     &:hover, &:focus {
-        // color: var(--cl-txt-white);
         background-color: var(--bgc-hover);
     }
     &::after {
@@ -25,14 +24,30 @@
         width: 9px;
         height: 9px;
         margin-left: 13px;
-        background-image: url(/src/images/icons/pointer.svg);
+        background-image: url(/src/images/icons/pointer-red.svg);
         background-size: contain;
         background-repeat: no-repeat;
-        fill: var(--cl-txt-accent-dark);
+    }
+    
+    &--mod-red {
+        color: var(--cl-txt-white);
+        background-color: var(--cl-txt-accent-dark);
+
         &:hover,
         &:focus {
-            color: var(--cl-txt-white);
-            background-color: var(--cl-txt-accent-dark);
+            background-color: var(--bgc-hover);
+            color: var(--cl-txt-accent-dark);
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            margin-left: 13px;
+            background-image: url(/src/images/icons/pointer-white.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     }
 }
