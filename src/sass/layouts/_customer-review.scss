@@ -1,13 +1,14 @@
 .customer__reviews {
-  height: 427px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+
   display: block;
-  position: relative;
 }
 
 .slider__reviews {
   width: 100%;
-  height: 427px;
-
+  height: 517px;
+  position: relative;
   overflow: hidden;
 }
 
@@ -21,10 +22,14 @@
 .navigation {
   position: absolute;
   display: flex;
-
-  bottom: 120px;
+  bottom: 0;
+  padding-top: 16px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.house__icon {
+  fill: var(--cl-txt-accent-dark);
 }
 
 .bar {
@@ -69,53 +74,76 @@ input[name='r'] {
   margin: 0 auto;
 }
 
-.brackets {
-  position: absolute;
-  width: 54px;
-  height: 40px;
-  left: 242px;
-  top: 3580px;
-
-  background: #e1e1e1;
-  transform: rotate(-180deg);
+.rewiews {
+  position: relative;
+  margin: 0 auto;
+  width: 280px;
+  height: 308px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  display: flex;
+  padding-top: 43px;
+  padding-bottom: 17px;
+  margin-top: 32px;
+  background-color: #fafafa;
 }
 
 .text {
-  max-width: 968px;
-  width: 100%;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #000;
   margin: 0 auto;
-  font-size: 16px;
-  line-height: 186%;
-  padding: 0 74px;
-
-  @media screen and (min-width: 320px) {
-    padding: 0 20px;
-  }
+  max-width: 180px;
+  height: 248px;
+  width: 100%;
+  padding: 0 11px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 30px,
+    #e1e1e1 30px,
+    #e1e1e1 31px
+  );
 }
 
-.rewiews {
+.name {
   text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  padding-top: 16px;
+  color: #000000;
 }
 
-.rewiews::before {
-  content: url(/src/images/customer/“.png);
+.text::before {
+  content: '';
   width: 54px;
   height: 40px;
+  background-image: url(/src/images/customer/“.png);
   background-size: contain;
-  color: #e1e1e1;
-  transform: rotate(-180deg);
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 45px;
 }
 
-.rewiews::after {
-  content: url(/src/images/customer/Group8.png);
+.point {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 16px;
+}
+
+.point__item {
   width: 4px;
   height: 4px;
   border-radius: 50%;
 
-  color: #c7133e;
+  background-color: #c7133e;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 #r1:checked ~ .s1 {
