@@ -25,18 +25,132 @@
         </li>
       </ul>
     </div>
+
+    <!-- Slider -->
     <div class="slider">
+      <input
+        class="slider__input slider__input--1"
+        type="radio"
+        id="s1"
+        name="Slides"
+        checked
+      />
+      <input
+        class="slider__input slider__input--2"
+        type="radio"
+        id="s2"
+        name="Slides"
+      />
+      <input
+        class="slider__input slider__input--3"
+        type="radio"
+        id="s3"
+        name="Slides"
+      />
+      <div class="slider__item" id="slide__1">
+        <picture class="slider__picture"
+          ><source
+            media="(min-width: 1200px)"
+            srcset="
+              ../src/images/hero/hero-milk_lg.png    1x,
+              ../src/images/hero/hero-milk_lg@2x.png 2x
+            " />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../src/images/hero/hero-milk_md.png    1x,
+              ../src/images/hero/hero-milk_md@2x.png 2x
+            " />
+          <img
+            class="slider__img"
+            src="../src/images/hero/hero-milk_md.png"
+            alt="Bottle of milk"
+            loading="lazy"
+        /></picture>
+        <p class="slider__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <label class="slider__btn" for="s2">
+          <svg class="slider__icon" width="7" height="7">
+            <use href="../src/images/sprite.svg#arrow-right"></use>
+          </svg>
+        </label>
+      </div>
+      <div class="slider__item" id="slide__2">
+        <picture class="slider__picture"
+          ><source
+            media="(min-width: 1200px)"
+            srcset="
+              ../src/images/hero/hero-milk_2_lg.png    1x,
+              ../src/images/hero/hero-milk_2_lg@2x.png 2x
+            " />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../src/images/hero/hero-milk_2_md.png    1x,
+              ../src/images/hero/hero-milk_2_md@2x.png 2x
+            " />
+          <img
+            class="slider__img"
+            src="../src/images/hero/hero-milk_2_md.png"
+            alt="Nice Guy"
+            loading="lazy"
+        /></picture>
+        <p class="slider__text">
+          I like Ice-cream! I like Ice-cream! I like Ice-cream! I like
+          Ice-cream! I like Ice-cream! I like Ice-cream!
+        </p>
+        <label class="slider__btn" for="s3">
+          <svg class="slider__icon" width="7" height="7">
+            <use href="../src/images/sprite.svg#arrow-right"></use>
+          </svg>
+        </label>
+      </div>
+      <div class="slider__item" id="slide__3">
+        <picture class="slider__picture"
+          ><source
+            media="(min-width: 1200px)"
+            srcset="
+              ../src/images/hero/hero-milk_3_lg.png    1x,
+              ../src/images/hero/hero-milk_3_lg@2x.png 2x
+            " />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../src/images/hero/hero-milk_3_md.png    1x,
+              ../src/images/hero/hero-milk_3_md@2x.png 2x
+            " />
+          <img
+            class="slider__img"
+            src="../src/images/hero/hero-milk_3_md.png"
+            alt="Bottle of milk"
+            loading="lazy"
+        /></picture>
+        <p class="slider__text">
+          Here We
+          Gooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-!!!
+        </p>
+        <label class="slider__btn" for="s1">
+          <svg class="slider__icon" width="7" height="7">
+            <use href="../src/images/sprite.svg#arrow-right"></use>
+          </svg>
+        </label>
+      </div>
+    </div>
+    <!--Slider with mistake-->
+    <!-- <div class="slider">
       <ul class="slider__list list">
         <li class="slider__item" id="slide__1">
           <picture class="slider__picture"
             ><source
-              media="(min-width: 768px)"
+              media="(min-width: 1200px)"
               srcset="
                 ../src/images/hero/hero-milk_lg.png    1x,
                 ../src/images/hero/hero-milk_lg@2x.png 2x
               " />
             <source
-              media="(min-width: 320px)"
+              media="(min-width: 768px)"
               srcset="
                 ../src/images/hero/hero-milk_md.png    1x,
                 ../src/images/hero/hero-milk_md@2x.png 2x
@@ -66,13 +180,13 @@
         <li class="slider__item" id="slide__2">
           <picture class="slider__picture"
             ><source
-              media="(min-width: 768px)"
+              media="(min-width: 1200px)"
               srcset="
                 ../src/images/hero/hero-milk_2_lg.png    1x,
                 ../src/images/hero/hero-milk_2_lg@2x.png 2x
               " />
             <source
-              media="(min-width: 320px)"
+              media="(min-width: 768px)"
               srcset="
                 ../src/images/hero/hero-milk_2_md.png    1x,
                 ../src/images/hero/hero-milk_2_md@2x.png 2x
@@ -99,13 +213,13 @@
         <li class="slider__item" id="slide__3">
           <picture class="slider__picture"
             ><source
-              media="(min-width: 768px)"
+              media="(min-width: 1200px)"
               srcset="
                 ../src/images/hero/hero-milk_3_lg.png    1x,
                 ../src/images/hero/hero-milk_3_lg@2x.png 2x
               " />
             <source
-              media="(min-width: 320px)"
+              media="(min-width: 768px)"
               srcset="
                 ../src/images/hero/hero-milk_3_md.png    1x,
                 ../src/images/hero/hero-milk_3_md@2x.png 2x
@@ -130,50 +244,25 @@
           </div>
         </li>
       </ul>
-    </div>
+    </div> -->
     <div class="hero__bg-ellipse"></div>
-    <!-- <picture class="hero__icecream-picture"
-      ><source
-        media="(min-width: 768px)"
-        srcset="
-          ../src/images/hero/hero-icecream_lg.png    1x,
-          ../src/images/hero/hero-icecream_lg@2x.png 2x
-        " />
-      <source
-        media="(min-width: 320px)"
-        srcset="
-          ../src/images/hero/hero-icecream_md.png    1x,
-          ../src/images/hero/hero-icecream_md@2x.png 2x
-        " />
-      <source
-        media="(max-width: 319px)"
-        srcset="
-          ../src/images/hero/hero-icecream_sm.png    1x,
-          ../src/images/hero/hero-icecream_sm@2x.png 2x
-        " />
-      <img
-        class="hero__icecream-img"
-        src="../src/images/hero/hero-icecream_sm.png"
-        alt="Ice-cream cone"
-        loading="lazy" />
-    </picture> -->
     <picture class="hero__icecream-picture--1"
       ><source
-        media="(min-width: 768px)"
+        media="(min-width: 1200px)"
         srcset="
           ../src/images/hero/hero-icecream_lg_1.png    1x,
           ../src/images/hero/hero-icecream_lg_1@2x.png 2x
         "
       />
       <source
-        media="(min-width: 320px)"
+        media="(min-width: 768px)"
         srcset="
           ../src/images/hero/hero-icecream_md_1.png    1x,
           ../src/images/hero/hero-icecream_md_1@2x.png 2x
         "
       />
       <source
-        media="(max-width: 319px)"
+        media="(max-width: 767px)"
         srcset="
           ../src/images/hero/hero-icecream_sm_1.png    1x,
           ../src/images/hero/hero-icecream_sm_1@2x.png 2x
@@ -188,21 +277,21 @@
     </picture>
     <picture class="hero__icecream-picture--2"
       ><source
-        media="(min-width: 768px)"
+        media="(min-width: 1200px)"
         srcset="
           ../src/images/hero/hero-icecream_lg_2.png    1x,
           ../src/images/hero/hero-icecream_lg_2@2x.png 2x
         "
       />
       <source
-        media="(min-width: 320px)"
+        media="(min-width: 768px)"
         srcset="
           ../src/images/hero/hero-icecream_md_2.png    1x,
           ../src/images/hero/hero-icecream_md_2@2x.png 2x
         "
       />
       <source
-        media="(max-width: 319px)"
+        media="(max-width: 767px)"
         srcset="
           ../src/images/hero/hero-icecream_sm_2.png    1x,
           ../src/images/hero/hero-icecream_sm_2@2x.png 2x
@@ -217,21 +306,21 @@
     </picture>
     <picture class="hero__icecream-picture--3"
       ><source
-        media="(min-width: 768px)"
+        media="(min-width: 1200px)"
         srcset="
           ../src/images/hero/hero-icecream_lg_3.png    1x,
           ../src/images/hero/hero-icecream_lg_3@2x.png 2x
         "
       />
       <source
-        media="(min-width: 320px)"
+        media="(min-width: 768px)"
         srcset="
           ../src/images/hero/hero-icecream_md_3.png    1x,
           ../src/images/hero/hero-icecream_md_3@2x.png 2x
         "
       />
       <source
-        media="(max-width: 319px)"
+        media="(max-width: 767px)"
         srcset="
           ../src/images/hero/hero-icecream_sm_3.png    1x,
           ../src/images/hero/hero-icecream_sm_3@2x.png 2x
@@ -246,21 +335,21 @@
     </picture>
     <picture class="hero__icecream-picture--4"
       ><source
-        media="(min-width: 768px)"
+        media="(min-width: 1200px)"
         srcset="
           ../src/images/hero/hero-icecream_lg_4.png    1x,
           ../src/images/hero/hero-icecream_lg_4@2x.png 2x
         "
       />
       <source
-        media="(min-width: 320px)"
+        media="(min-width: 768px)"
         srcset="
           ../src/images/hero/hero-icecream_md_4.png    1x,
           ../src/images/hero/hero-icecream_md_4@2x.png 2x
         "
       />
       <source
-        media="(max-width: 319px)"
+        media="(max-width: 767px)"
         srcset="
           ../src/images/hero/hero-icecream_sm_4.png    1x,
           ../src/images/hero/hero-icecream_sm_4@2x.png 2x
@@ -275,21 +364,21 @@
     </picture>
     <picture class="hero__icecream-picture--5"
       ><source
-        media="(min-width: 768px)"
+        media="(min-width: 1200px)"
         srcset="
           ../src/images/hero/hero-icecream_lg_5.png    1x,
           ../src/images/hero/hero-icecream_lg_5@2x.png 2x
         "
       />
       <source
-        media="(min-width: 320px)"
+        media="(min-width: 768px)"
         srcset="
           ../src/images/hero/hero-icecream_md_5.png    1x,
           ../src/images/hero/hero-icecream_md_5@2x.png 2x
         "
       />
       <source
-        media="(max-width: 319px)"
+        media="(max-width: 767px)"
         srcset="
           ../src/images/hero/hero-icecream_sm_5.png    1x,
           ../src/images/hero/hero-icecream_sm_5@2x.png 2x
@@ -304,21 +393,21 @@
     </picture>
     <picture class="hero__icecream-picture--6"
       ><source
-        media="(min-width: 768px)"
+        media="(min-width: 1200px)"
         srcset="
           ../src/images/hero/hero-icecream_lg_6.png    1x,
           ../src/images/hero/hero-icecream_lg_6@2x.png 2x
         "
       />
       <source
-        media="(min-width: 320px)"
+        media="(min-width: 768px)"
         srcset="
           ../src/images/hero/hero-icecream_md_6.png    1x,
           ../src/images/hero/hero-icecream_md_6@2x.png 2x
         "
       />
       <source
-        media="(max-width: 319px)"
+        media="(max-width: 767px)"
         srcset="
           ../src/images/hero/hero-icecream_sm_6.png    1x,
           ../src/images/hero/hero-icecream_sm_6@2x.png 2x
@@ -333,21 +422,21 @@
     </picture>
     <picture class="hero__icecream-picture--7"
       ><source
-        media="(min-width: 768px)"
+        media="(min-width: 1200px)"
         srcset="
           ../src/images/hero/hero-icecream_lg_7.png    1x,
           ../src/images/hero/hero-icecream_lg_7@2x.png 2x
         "
       />
       <source
-        media="(min-width: 320px)"
+        media="(min-width: 768px)"
         srcset="
           ../src/images/hero/hero-icecream_md_7.png    1x,
           ../src/images/hero/hero-icecream_md_7@2x.png 2x
         "
       />
       <source
-        media="(max-width: 319px)"
+        media="(max-width: 767px)"
         srcset="
           ../src/images/hero/hero-icecream_sm_7.png    1x,
           ../src/images/hero/hero-icecream_sm_7@2x.png 2x
@@ -362,14 +451,14 @@
     </picture>
     <picture class="hero__girl-picture"
       ><source
-        media="(min-width: 768px)"
+        media="(min-width: 1200px)"
         srcset="
           ../src/images/hero/hero-girl_lg.png    1x,
           ../src/images/hero/hero-girl_lg@2x.png 2x
         "
       />
       <source
-        media="(min-width: 320px)"
+        media="(min-width: 768px)"
         srcset="
           ../src/images/hero/hero-girl_md.png    1x,
           ../src/images/hero/hero-girl_md@2x.png 2x
