@@ -71,15 +71,13 @@ function setActiveLink(arr) {
   }
 })();
 
-// ========= animations =========
-// AOS.init();
-// Modal window
+// Modal window about
 
 (() => {
   const refs = {
     openModalBtn: document.querySelector("[about-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
-    modal: document.querySelector("[data-modal]"),
+    closeModalBtn: document.querySelector("[about-data-modal-close]"),
+    modal: document.querySelector("[about-data-modal]"),
   };
 
   refs.openModalBtn.addEventListener("click", toggleModal);
@@ -89,3 +87,7 @@ function setActiveLink(arr) {
     refs.modal.classList.toggle("is-hidden");
   }
 })();
+
+// ========= animations =========
+// AOS.init();
+
