@@ -1,0 +1,157 @@
+// .cards__grid {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+
+// .products__title-second {
+//  margin-bottom: 15px;
+// }
+
+.products__title {
+  margin-bottom: 140px;
+}
+
+.cards__grid-item {
+  width: 100%;
+
+  &:not(:last-child) {
+    @include mq(mobile-only) {
+      margin-bottom: 130px;
+    }
+  }
+}
+.products__card {
+  border-radius: 24px;
+
+  padding: 160px 53px 32px 53px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.products__card::before {
+  content: '';
+  width: 280px;
+  height: 280px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: absolute;
+  top: 0;
+  z-index: 2;
+
+  transform: translateY(-45%);
+}
+
+.products__card-ice--cream {
+  background: var(--bgc-accent-cream);
+
+  &::before {
+    background-image: url(/src/images/products/product1_mob.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/products/product1_mob@2x.png);
+    }
+  }
+}
+
+.products__card-ice--coffee {
+  background: var(--bgc-accent-coffee);
+
+  &::before {
+    background-image: url(/src/images/products/product2_mob.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/products/product2_mob@2x.png);
+    }
+  }
+}
+
+.products__card-ice--milkshake {
+  background: var(--bgc-accent-shake);
+
+  &::before {
+    background-image: url(/src/images/products/product3_mob.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/products/product3_mob@2x.png);
+    }
+  }
+}
+
+.products__card-title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--cl-txt-white);
+}
+
+.products__card-title::after {
+  content: '';
+  width: 26px;
+  height: 6px;
+
+  display: block;
+  margin: 30px auto 0px auto;
+
+  background-image: url(/src/images/products/Group\ 4.svg);
+  background-color: var(--bgc-main);
+}
+
+.products__card-description {
+  margin-top: 30px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: var(--cl-txt-white);
+}
+
+.products__card--btn {
+  margin-top: 32px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  background-color: var(--cl-txt-white);
+  transition: background-color var(--anim), color var(--anim);
+
+  &:hover,
+  &:focus {
+    background-color: var(--bgc-hover);
+    transition: background-color var(--anim), color var(--anim);
+  }
+}
+
+.products__icon {
+  fill: var(--cl-txt-accent-dark);
+}

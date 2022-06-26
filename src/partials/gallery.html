@@ -1,14 +1,186 @@
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-<div class="container">
-    <div class="grid">
-        <div class="grid__item"><img src="/src/images/gallery/1-picture@1x.jpg" alt=""></div>
-        <div class="grid__item"><img src="/src/images/gallery/2-picture@1x.jpg" alt=""></div>
-        <div class="grid__item"><img src="/src/images/gallery/3-picture@1x.jpg" alt=""></div>
-        <div class="grid__item"><img src="/src/images/gallery/4-picture@1x.jpg" alt=""></div>
-        <div class="grid__item"><img src="/src/images/gallery/5-picture@1x.jpg" alt=""></div>
-        <div class="grid__item"><img src="/src/images/gallery/6-picture@1x.jpg" alt=""></div>
-        <div class="grid__item"><img src="/src/images/gallery/7-picture@1x.jpg" alt=""></div>
-        <div class="grid__item"><img src="/src/images/gallery/8-picture@1x.jpg" alt=""></div>
-        <div class="grid__item"><img src="/src/images/gallery/9-picture@1x.jpg" alt=""></div>
+<div class="gallery">
+    <div class="container">
+        <div class="gallery__columns">
+            
+            <div class="gallery__column">
+                <picture class="gallery__column--top">
+                    <source srcset="
+                    ./images/gallery/1-picture/1-picture@1x.webp 138w,
+                    ./images/gallery/1-picture/1-picture@2x.webp 276w
+                    ./images/gallery/1-picture/1-picture@3x.webp 414w"
+                    type="image/webp"
+                    sizes="(min-width: 1200px) 138px, (min-width: 768px) 105px, (min-width: 320px) 40px">
+
+                    <img srcset="
+                    /src/images/gallery/1-picture/1-picture@1x.jpg 138w,
+                    /src/images/gallery/1-picture/1-picture@2x.jpg 276w
+                    /src/images/gallery/1-picture/1-picture@3x.jpg 414w" 
+                  src="/src/images/gallery/1-picture/1-picture@1x.jpg" 
+                  alt="icecream" 
+                  sizes="(min-width: 1200px) 138px, (min-width: 768px) 105px, (min-width: 320px) 44px">
+                </picture>
+            </div>
+            
+            <div class="gallery__column">
+                <picture class="gallery__column--top">
+                    <source srcset="
+                    /src/images/gallery/2-picture/2-picture@1x.webp 138w,
+                    /src/images/gallery/2-picture/2-picture@2x.webp 276w
+                    /src/images/gallery/2-picture/2-picture@3x.webp 414w"
+                    type="image/webp"
+                    sizes="(min-width: 1200px) 138px, (min-width: 768px) 105px, (min-width: 320px) 40px">
+
+                    <img srcset="
+                    /src/images/gallery/2-picture/2-picture@1x.jpg 138w,
+                    /src/images/gallery/2-picture/2-picture@2x.jpg 276w
+                    /src/images/gallery/2-picture/2-picture@3x.jpg 414w" 
+                  src="/src/images/gallery/2-picture/2-picture@1x.jpg" 
+                  alt="icecream2" 
+                  sizes="(min-width: 1200px) 138px, (min-width: 768px) 105px, (min-width: 320px) 44px">
+                </picture>
+                <picture>
+                    <source srcset="
+                    /src/images/gallery/3-picture/3-picture@1x.webp 138w,
+                    /src/images/gallery/3-picture/3-picture@2x.webp 276w
+                    /src/images/gallery/3-picture/3-picture@3x.webp 414w"
+                    type="image/webp"
+                    sizes="(min-width: 1200px) 138px, (min-width: 768px) 105px, (min-width: 320px) 40px">
+
+                    <img srcset="
+                    /src/images/gallery/3-picture/3-picture@1x.jpg 138w,
+                    /src/images/gallery/3-picture/3-picture@2x.jpg 276w
+                    /src/images/gallery/3-picture/3-picture@3x.jpg 414w" 
+                  src="/src/images/gallery/3-picture/3-picture@1x.jpg" 
+                  alt="icecream3" 
+                  sizes="(min-width: 1200px) 138px, (min-width: 768px) 105px, (min-width: 320px) 44px">
+                </picture>
+            </div>
+
+            <div class="gallery__column">
+                <picture class="gallery__column--top">
+                    <source srcset="
+                    /src/images/gallery/4-picture/4-picture@1x.webp 138w,
+                    /src/images/gallery/4-picture/4-picture@2x.webp 276w
+                    /src/images/gallery/4-picture/4-picture@3x.webp 414w"
+                    type="image/webp"
+                    sizes="(min-width: 1200px) 138px, (min-width: 768px) 105px, (min-width: 320px) 40px">
+
+                    <img srcset="
+                    /src/images/gallery/4-picture/4-picture@1x.jpg 138w,
+                    /src/images/gallery/4-picture/4-picture@2x.jpg 276w
+                    /src/images/gallery/4-picture/4-picture@3x.jpg 414w" 
+                  src="/src/images/gallery/4-picture/4-picture@1x.jpg" 
+                  alt="icecream3" 
+                  sizes="(min-width: 1200px) 138px, (min-width: 768px) 105px, (min-width: 320px) 44px">
+                </picture>
+                <picture>
+                    <source srcset="
+                    /src/images/gallery/10-picture/10-picture@1x.webp 138w,
+                    /src/images/gallery/10-picture/10-picture@2x.webp 276w
+                    /src/images/gallery/10-picture/10-picture@3x.webp 414w"
+                    type="image/webp"
+                    sizes="(min-width: 1200px) 138px, (min-width: 768px) 105px, (min-width: 320px) 40px">
+
+                    <img srcset="
+                    /src/images/gallery/10-picture/10-picture@1x.jpg 138w,
+                    /src/images/gallery/10-picture/10-picture@2x.jpg 276w
+                    /src/images/gallery/10-picture/10-picture@3x.jpg 414w" 
+                  src="/src/images/gallery/10-picture/10-picture@1x.jpg" 
+                  alt="icecream3" 
+                  sizes="(min-width: 1200px) 138px, (min-width: 768px) 105px, (min-width: 320px) 44px">
+                </picture>
+            </div>
+            
+            <div class="gallery__column">
+                <picture>
+                    <source srcset="
+                    /src/images/gallery/5-picture/5-picture@1x.webp 138w,
+                    /src/images/gallery/5-picture/5-picture@2x.webp 276w
+                    /src/images/gallery/5-picture/5-picture@3x.webp 414w"
+                    type="image/webp"
+                    sizes="(min-width: 1200px) 138px, (min-width: 768px) 105px, (min-width: 320px) 40px">
+
+                    <img srcset="
+                    /src/images/gallery/5-picture/5-picture@1x.jpg 138w,
+                    /src/images/gallery/5-picture/5-picture@2x.jpg 276w
+                    /src/images/gallery/5-picture/5-picture@3x.jpg 414w" 
+                  src="/src/images/gallery/5-picture/5-picture@1x.jpg" 
+                  alt="icecream3" 
+                  sizes="(min-width: 1200px) 138px, (min-width: 768px) 105px, (min-width: 320px) 44px">
+                </picture>
+                <picture>
+                    <source srcset="
+                    /src/images/gallery/6-picture/6-picture@1x.webp 138w,
+                    /src/images/gallery/6-picture/6-picture@2x.webp 276w
+                    /src/images/gallery/6-picture/6-picture@3x.webp 414w"
+                    type="image/webp"
+                    sizes="(min-width: 1200px) 138px, (min-width: 768px) 105px, (min-width: 320px) 40px">
+
+                    <img srcset="
+                    /src/images/gallery/6-picture/6-picture@1x.jpg 138w,
+                    /src/images/gallery/6-picture/6-picture@2x.jpg 276w
+                    /src/images/gallery/6-picture/6-picture@3x.jpg 414w" 
+                  src="/src/images/gallery/6-picture/6-picture@1x.jpg" 
+                  alt="icecream3" 
+                  sizes="(min-width: 1200px) 138px, (min-width: 768px) 105px, (min-width: 320px) 44px">
+                </picture>
+            </div>
+
+            <div class="gallery__column">
+                <picture class="gallery__column--top">
+                    <source srcset="
+                    /src/images/gallery/7-picture/7-picture@1x.webp 138w,
+                    /src/images/gallery/7-picture/7-picture@2x.webp 276w
+                    /src/images/gallery/7-picture/7-picture@3x.webp 414w"
+                    type="image/webp"
+                    sizes="(min-width: 1200px) 138px, (min-width: 768px) 105px, (min-width: 320px) 40px">
+
+                    <img srcset="
+                    /src/images/gallery/7-picture/7-picture@1x.jpg 138w,
+                    /src/images/gallery/7-picture/7-picture@2x.jpg 276w
+                    /src/images/gallery/7-picture/7-picture@3x.jpg 414w" 
+                  src="/src/images/gallery/7-picture/7-picture@1x.jpg" 
+                  alt="icecream7" 
+                  sizes="(min-width: 1200px) 138px, (min-width: 768px) 105px, (min-width: 320px) 44px">
+                </picture>
+                <picture>
+                    <source srcset="
+                    /src/images/gallery/8-picture/8-picture@1x.webp 138w,
+                    /src/images/gallery/8-picture/8-picture@2x.webp 276w
+                    /src/images/gallery/8-picture/8-picture@3x.webp 414w"
+                    type="image/webp"
+                    sizes="(min-width: 1200px) 138px, (min-width: 768px) 105px, (min-width: 320px) 40px">
+
+                    <img srcset="
+                    /src/images/gallery/8-picture/8-picture@1x.jpg 138w,
+                    /src/images/gallery/8-picture/8-picture@2x.jpg 276w
+                    /src/images/gallery/8-picture/8-picture@3x.jpg 414w" 
+                  src="/src/images/gallery/8-picture/8-picture@1x.jpg" 
+                  alt="icecream8" 
+                  sizes="(min-width: 1200px) 138px, (min-width: 768px) 105px, (min-width: 320px) 44px">
+                </picture>
+            </div>
+
+            <div class="gallery__column">
+                <picture>
+                    <source srcset="
+                    /src/images/gallery/9-picture/9-picture@1x.webp 138w,
+                    /src/images/gallery/9-picture/9-picture@2x.webp 276w
+                    /src/images/gallery/9-picture/9-picture@3x.webp 414w"
+                    type="image/webp"
+                    sizes="(min-width: 1200px) 138px, (min-width: 768px) 105px, (min-width: 320px) 40px">
+
+                    <img srcset="
+                    /src/images/gallery/9-picture/9-picture@1x.jpg 138w,
+                    /src/images/gallery/9-picture/9-picture@2x.jpg 276w
+                    /src/images/gallery/9-picture/9-picture@3x.jpg 414w" 
+                  src="/src/images/gallery/9-picture/9-picture@1x.jpg" 
+                  alt="icecream8" 
+                  sizes="(min-width: 1200px) 138px, (min-width: 768px) 105px, (min-width: 320px) 44px">
+                </picture>
+            </div>
+
+        </div>
     </div>
+
 </div>
