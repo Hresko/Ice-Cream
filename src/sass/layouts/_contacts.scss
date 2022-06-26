@@ -13,7 +13,6 @@
 }
 
 .contact__item {
-
     position: relative;
     padding: 40px 32px;
     background: var(--cl-txt-white);
@@ -21,17 +20,17 @@
     border-radius: 24px;
 
     @include mq(tablet) {
-        margin-bottom: 22px;
+        margin-bottom: 20px;
     }
 
     @include mq(desktop) {
-        margin-bottom: 22px;
+        margin-bottom: 20px;
     }
 }
 
 .contact__item:not(:last-child) {
     @include mq(mobile) {
-        margin-bottom: 22px;
+        margin-bottom: 20px;
     }
     @include mq(tablet) {
         margin-right: 32px;
@@ -45,11 +44,11 @@
 .contact__point {
     display: flex;
     margin-bottom: 20px;
-    font-family: 'DM Sans';
+    font-family: var(--font-family-main);
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 186%;
+    line-height: 1.86;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -106,9 +105,7 @@
     content: "";
     position: absolute;
     margin-top: 12px;
-    height: 0px;
-    color: rgba(225, 225, 225, 1);
-    border: 1px solid #E1E1E1;
+    border-bottom: 1px solid var(--cl-txt-light);
 
     @include mq(mobile) {
         width: 216px;
@@ -130,9 +127,7 @@
         position: absolute;
         margin-top: 24px;
         width: 216px;
-        height: 0px;
-        color: rgba(225, 225, 225, 1);
-        border: 1px solid #E1E1E1;
+        border-bottom: 1px solid var(--cl-txt-light);
 
         @include mq(mobile) {
             width: 216px;
@@ -158,17 +153,17 @@
 
 .contact__title {
     margin-bottom: 8px;
-    font-family: 'DM Sans';
+    font-family: var(--font-family-main);
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 186%;
+    line-height: 1.86;
     letter-spacing: 0.04em;
     color: var(--cl-txt-main);
 }
 
 .contact__text {
-    font-family: 'DM Sans';
+    font-family: var(--font-family-main);
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
