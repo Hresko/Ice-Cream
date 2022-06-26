@@ -1,0 +1,17 @@
+
+.gallery {
+    background-image: linear-gradient(
+    to bottom,
+    rgba(255, 245, 246, 1)
+    ,
+    rgb(255, 255, 255)
+  );
+}
+
+.gallery__columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
