@@ -8,8 +8,13 @@
 @import './base/reset';
 @import './base/container';
 @import './base/section';
+@import './base/js-selectors';
 
 // components
+@import './components/button';
+@import './components/social-links';
+@import './components/visually-hidden';
+@import './components/mobile-menu';
 
 // layuots
 @import './layouts/header';

@@ -1,0 +1,160 @@
+.header__mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 11;
+
+    width: 250px;
+    height: 100vh;
+    padding-top: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    transform: translateX(100%);
+    transition: transform var(--slow-anim);
+
+    background-color: var(--bgc-menu);
+
+    visibility: hidden;
+    overflow-y: scroll;
+
+    &.is-open {
+        visibility: visible;
+        transform: translateX(0);
+        transition: transform var(--slow-anim);
+    }
+
+    @include mq(tablet) {
+        width: 255px;
+        padding-top: 84px;
+    }
+
+    @include mq(desktop) {
+        display: none;
+    }
+
+    & .btn {
+        margin-bottom: 32px;
+    }
+}
+
+// mobile button
+.mobile-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    width: 20px;
+    height: 20px;
+
+    color: var(--cl-txt-accent-dark);
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+    transition: color var(--anim);
+
+    &:hover,
+    &:focus {
+        color: var(--cl-txt-white);
+    }
+
+    &.is-open {
+        position: fixed;
+        overflow-y: scroll;
+    }
+
+    @include mq(tablet) {
+        top: 40px;
+    }
+
+    @include mq(desktop) {
+        display: none;
+    }
+}
+
+.mobile-btn__icon {
+    fill: currentColor;
+}
+
+.mobile-btn__icon-open {
+    display: block;
+
+    .mobile-btn.is-open & {
+        display: none;
+    }
+}
+
+.mobile-btn__icon-close {
+    display: none;
+
+    .mobile-btn.is-open & {
+        position: fixed;
+        display: block;
+    }
+}
+
+//mobile navigation
+.mobile-menu__navigation {
+    & .navigation__list {
+        display: inline-block;
+    }
+
+    & .navigation__item {
+        margin-right: 0;
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    & .navigation__link {
+        position: relative;
+        display: flex;
+        padding: 0;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.28;
+
+        transition: color var(--anim);
+
+        &::after {
+            position: absolute;
+            content: ' ';
+            bottom: -11px;
+            left: -20px;
+
+            height: 1px;
+            width: 250px;
+
+            background-color: #E18298;
+        }
+    }
+
+
+    & .navigation__link--current {
+        color: var(--cl-txt-accent-dark);
+
+        &::before {
+            position: absolute;
+            content: ' ';
+            top: -11px;
+            left: -20px;
+
+            height: 1px;
+            width: 250px;
+
+            background-color: #E18298;
+        }
+    }
+}

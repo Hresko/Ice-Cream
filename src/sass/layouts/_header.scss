@@ -1,0 +1,117 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+    &.js-no-transparency {
+        background-color: rgba(255, 184, 202, 0.75);
+
+        & .mobile-btn {
+            top: 20px;
+
+            @include mq(tablet) {
+                top: 40px;
+            }
+        }
+    }
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    text-align: left;
+
+    @include mq(mobile) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    @include mq(tablet-only) {
+        height: 85px;
+        justify-content: space-around;
+        padding-bottom: 16px;
+    }
+
+    @include mq(desktop) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+// ========== logo ==========
+
+.logo {
+    position: absolute;
+    top: 8px;
+    left: 20px;
+
+    @include mq(tablet) {
+        top: 32px;
+        left: 32px;
+    }
+
+    @include mq(desktop) {
+        top: 35px;
+        left: 40px;
+    }
+}
+
+// ========== navigation ==========
+.navigation {
+    margin-left: 200px;
+}
+
+.navigation__list {
+    display: none;
+
+    @include mq(desktop) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.navigation__item {
+
+    &:not(:last-child) {
+        margin-right: 35px;
+    }
+}
+
+.navigation__link {
+    display: flex;
+    align-items: center;
+
+    padding-top: 52px;
+    padding-bottom: 52px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+
+    color: var(--cl-txt-white);
+}
+
+.navigation__link--current {
+    color: var(--cl-txt-accent-dark);
+}
+
+//  ========== button ==========
+.header__btn {
+    display: none;
+
+    @include mq(tablet) {
+        display: inline-block;
+        position: absolute;
+        top: 31px;
+        right: 83px;
+        z-index: 11;
+    }
+
+    @include mq(desktop) {
+        position: static;
+    }
+}
