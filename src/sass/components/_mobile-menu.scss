@@ -24,6 +24,7 @@
     &.is-open {
         visibility: visible;
         transform: translateX(0);
+        transition: transform var(--slow-anim);
     }
 
     @include mq(tablet) {
@@ -114,8 +115,6 @@
         &:not(:last-child) {
             margin-bottom: 24px;
         }
-
-
     }
 
     & .navigation__link {
@@ -129,6 +128,23 @@
 
         transition: color var(--anim);
 
+        &::after {
+            position: absolute;
+            content: ' ';
+            bottom: -11px;
+            left: -20px;
+
+            height: 1px;
+            width: 250px;
+
+            background-color: #E18298;
+        }
+    }
+
+
+    & .navigation__link--current {
+        color: var(--cl-txt-accent-dark);
+
         &::before {
             position: absolute;
             content: ' ';
@@ -140,23 +156,5 @@
 
             background-color: #E18298;
         }
-
-        &:last-child {
-            &::after {
-                position: absolute;
-                content: ' ';
-                bottom: -11px;
-                left: -20px;
-
-                height: 1px;
-                width: 250px;
-
-                background-color: #E18298;
-            }
-        }
-    }
-
-    & .navigation__link--current {
-        color: var(--cl-txt-accent-dark);
     }
 }
