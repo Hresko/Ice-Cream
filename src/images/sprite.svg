@@ -9,8 +9,9 @@
 <symbol id="arrow-up" viewBox="0 0 32 32">
 <path d="M27.41 12.59l-10-10c-0.361-0.359-0.86-0.582-1.41-0.582s-1.049 0.222-1.41 0.582l-10 10c-0.462 0.37-0.756 0.934-0.756 1.566 0 1.105 0.895 2 2 2 0.633 0 1.197-0.294 1.563-0.752l0.003-0.004 6.6-6.57v19.17c0 1.105 0.895 2 2 2s2-0.895 2-2v0-19.17l6.59 6.58c0.361 0.359 0.86 0.582 1.41 0.582s1.049-0.222 1.41-0.582l-0 0c0.359-0.361 0.582-0.86 0.582-1.41s-0.222-1.049-0.582-1.41l0 0z"></path>
 </symbol>
-<symbol id="check" viewBox="0 0 32 32">
-<path fill="#fff" style="fill: var(--color3, #fff); stroke: var(--color3, #fff)" stroke="currentColor" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4923" d="M4.817 15.389l-0.169-0.162-2.544 2.41 8.962 8.55 18.829-17.962-2.527-2.411-16.302 15.536-6.249-5.962z"></path>
+<symbol id="check" viewBox="0 0 34 32">
+<path fill="#D41443" style="fill: var(--color1, #D41443)" d="M4.267 0h25.6c2.356 0 4.267 1.91 4.267 4.267v23.467c0 2.356-1.91 4.267-4.267 4.267h-25.6c-2.356 0-4.267-1.91-4.267-4.267v-23.467c0-2.356 1.91-4.267 4.267-4.267z"></path>
+<path fill="#fff" style="fill: var(--color2, #fff); stroke: var(--color2, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4267" d="M8.442 16.538l-0.147-0.141-0.147 0.139-2.057 1.95 0.162 0.156 7.605 7.253 0.147-0.141 16.171-15.426-0.162-0.154-2.029-1.935-0.147 0.141-13.98 13.325-5.417-5.167z"></path>
 </symbol>
 <symbol id="close" viewBox="0 0 32 32">
 <path fill="none" stroke="currentColor" style="stroke: currentColor" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.52 2l26.96 28M2 29.48l28-26.96"></path>
