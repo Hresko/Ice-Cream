@@ -93,27 +93,61 @@
         </svg>
         </button>
         <h2 class="section-title section-title__md ">Ice cream production</h2>
-        <p class="label-title">Main ingredient is love</p>
+        <p class="label-title label-title__md ">Main ingredient is love</p>
         <ul class="list">
             <li class="item about-item">
                 <p class="description-img">Grazing cows</p>
-                <img class="mod-img" src="/src/images/about/photo-cows__sm.jpg" width="280"  >
+                <picture>
+                  <source 
+                  media="(min-width: 768px)"
+                  srcset="
+                  ../src/images/about/photo-cows__md.jpg"
+                  type="image/jpg"
+                  >
+                  <img 
+                  class="mod-img"
+                   src="../src/images/about/photo-cows__sm.jpg" 
+                   alt="cow"
+                   width="100%"  >
+                  
+                </picture>
                 
             </li>
             <li class="item about-item">
                 <p class="description-img">Milk collection</p>
-                <img class="mod-img" src="/src/images/about/photo-milk__sm.jpg" >
-                
+                <picture>
+                  <source 
+                  media="(min-width: 768px)"
+                  srcset="
+                  ../src/images/about/photo-milk__md.jpg"
+                  type="image/jpg"
+                  >
+                <img class="mod-img" src="../src/images/about/photo-milk__sm.jpg" >
+              </picture>
             </li>
             <li class="item about-item">
                 <p class="description-img">Secret recipe</p>
+                <picture>
+                  <source 
+                  media="(min-width: 768px)"
+                  srcset="
+                  ../src/images/about/photo-kitchen__md.jpg"
+                  type="image/jpg"
+                  >
                 <img class="mod-img" src="/src/images/about/photo-kitchen__sm.jpg" >
-                
+              </picture>
             </li>
             <li class="item about-item">
                 <p class="description-img">Selling</p>
+                <picture>
+                  <source 
+                  media="(min-width: 768px)"
+                  srcset="
+                  ../src/images/about/photo-ice-cream__md.jpg"
+                  type="image/jpg"
+                  >
                 <img class="mod-img" src="/src/images/about/photo-ice-cream__sm.jpg" >
-                
+              </picture>
             </li>
         </ul>
 
