@@ -1,5 +1,6 @@
 .btn {
     min-width: 160px;
+    max-width: 190px;
     height: 44px;
     border-radius: 22px;
     padding: 0;
@@ -8,12 +9,30 @@
     border: none;
     color: var(--cl-txt-accent-dark);
     background-color: var(--cl-txt-white);
-
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    text-align: center;
     transition: color var(--anim), background-color var(--anim);
-
-    &:hover,
-    &:focus {
-        color: var(--cl-txt-white);
-        background-color: var(--cl-txt-accent-dark);
+    &:hover, &:focus {
+        // color: var(--cl-txt-white);
+        background-color: var(--bgc-hover);
+    }
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        margin-left: 13px;
+        background-image: url(/src/images/icons/pointer.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        fill: var(--cl-txt-accent-dark);
+        &:hover,
+        &:focus {
+            color: var(--cl-txt-white);
+            background-color: var(--cl-txt-accent-dark);
+        }
     }
 }
