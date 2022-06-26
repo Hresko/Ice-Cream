@@ -1,18 +1,15 @@
-p, li, ul{
-    padding: 0;
-        margin: 0;
-}
-
-li {
-    list-style-type: none;
-
-}
 
 
 .advantages {
-    padding-left: 22px;
+
     padding-top: 40px;
     background-color: var(--bgc-accent-ice);
+}
+
+.advantages__container {
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .visually-hidden {
@@ -28,45 +25,181 @@ li {
     overflow: hidden;
 }
 
+.advantages-list {
+    padding: 0;
+}
 
-.advantages-list__item{
+.advantages-list__item {
     margin-bottom: 32px;
-    &:last-child{
+
+    &:last-child {
         margin-bottom: 0;
     }
 }
 
-.advantages-list__title{
-        font-family: 'Titan One';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 41px;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-    
-        color: var(--cl-txt-accent-dark);
+.advantages-list__title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 
-        margin-top: 16px;
-        margin-bottom: 4px;
+    color: var(--cl-txt-accent-dark);
 
-        transition: var(--slow-anim);
+    margin-top: 16px;
+    margin-bottom: 4px;
 
+    transition: var(--slow-anim);
+
+   
 }
 
-.advantages-list__text{
+.advantages-list__icecream{
+    &::before {
+            content: '';
+            display: block;
+            width: 33px;
+            height: 50px;
+    
+            margin-bottom: 16px;
+    
+            background-image: url(/src/images/advantages/icecream.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            fill: var(--cl-txt-accent-dark);
+
+            -webkit-animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            
+                    @-webkit-keyframes scale-up-center {
+                        0% {
+                            -webkit-transform: scale(0.5);
+                            transform: scale(0.5);
+                        }
+                
+                        100% {
+                            -webkit-transform: scale(1);
+                            transform: scale(1);
+                        }
+                    }
+                
+                    @keyframes scale-up-center {
+                        0% {
+                            -webkit-transform: scale(0.5);
+                            transform: scale(0.5);
+                        }
+                
+                        100% {
+                            -webkit-transform: scale(1);
+                            transform: scale(1);
+                        }
+                    }
+        }
+}
+
+.advantages-list__apples{
+    &::before {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 50px;
+    
+            margin-bottom: 16px;
+    
+            background-image: url(/src/images/advantages/apples.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            fill: var(--cl-txt-accent-dark);
+
+            -webkit-animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            
+            
+                @-webkit-keyframes scale-up-center {
+                    0% {
+                        -webkit-transform: scale(0.5);
+                        transform: scale(0.5);
+                    }
+            
+                    100% {
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                    }
+                }
+            
+                @keyframes scale-up-center {
+                    0% {
+                        -webkit-transform: scale(0.5);
+                        transform: scale(0.5);
+                    }
+            
+                    100% {
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                    }
+                }
+        }
+}
+
+.advantages-list__heart{
+    &::before {
+            content: '';
+            display: block;
+            width: 44px;
+            height: 50px;
+    
+            margin-bottom: 16px;
+    
+            background-image: url(/src/images/advantages/heart.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            fill: var(--cl-txt-accent-dark);
+
+            -webkit-animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                animation: scale-up-center 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            
+                @-webkit-keyframes scale-up-center {
+                    0% {
+                        -webkit-transform: scale(0.5);
+                        transform: scale(0.5);
+                    }
+            
+                    100% {
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                    }
+                }
+            
+                @keyframes scale-up-center {
+                    0% {
+                        -webkit-transform: scale(0.5);
+                        transform: scale(0.5);
+                    }
+            
+                    100% {
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                    }
+                }
+        }
+}
+
+
+.advantages-list__text {
     width: 230px;
-        height: 36px;
-        
-    
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 170%;
-        
-    
-    
-        color: var(--cl-txt-main);
+    height: 36px;
+
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+
+
+
+    color: var(--cl-txt-main);
 
 }
