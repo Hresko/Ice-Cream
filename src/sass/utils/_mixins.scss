@@ -5,7 +5,7 @@
 
 
     @if $type =='mobile-only' {
-        @media screen and (max-width: #{$tablet - 0.02}) {
+        @media screen and (min-width: $mobile) and (max-width: #{$tablet - 0.02}) {
             @content;
         }
     }
