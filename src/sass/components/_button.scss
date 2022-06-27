@@ -15,9 +15,12 @@
     line-height: 1.31;
     text-align: center;
     transition: color var(--anim), background-color var(--anim);
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
         background-color: var(--bgc-hover);
     }
+
     &::after {
         content: '';
         display: inline-block;
@@ -28,16 +31,10 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
-    
+
     &--mod-red {
         color: var(--cl-txt-white);
         background-color: var(--cl-txt-accent-dark);
-
-        &:hover,
-        &:focus {
-            background-color: var(--bgc-hover);
-            color: var(--cl-txt-accent-dark);
-        }
 
         &::after {
             content: '';
@@ -48,6 +45,17 @@
             background-image: url(/src/images/icons/pointer-white.svg);
             background-size: contain;
             background-repeat: no-repeat;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: var(--bgc-hover);
+            color: var(--cl-txt-accent-dark);
+        }
+
+        &:hover,
+        &:focus &::after {
+            background-image: url(/src/images/icons/pointer-red.svg);
         }
     }
 }

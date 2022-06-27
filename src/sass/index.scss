@@ -9,6 +9,7 @@
 @import './base/container';
 @import './base/section';
 @import './base/js-selectors';
+@import './base/animations';
 
 // components
 @import './components/button';
@@ -17,6 +18,7 @@
 @import './components/mobile-menu';
 @import './components/modal';
 @import './components/backdrop';
+@import './components/scroll-to-top';
 
 // layuots
 @import './layouts/header';
