@@ -74,11 +74,19 @@
         justify-content: center;
         background-color: var(--bgc-accent-ice);
 
+        @include mq(tablet) {
+            flex-direction: row;
+        }
+
         & p {
             font-weight: 700;
             font-size: 14px;
             line-height: 1.85;
             color: var(--cl-txt-second);
+
+            @include mq(tablet) {
+                margin-right: 5px;
+            }
         }
     }
 }
