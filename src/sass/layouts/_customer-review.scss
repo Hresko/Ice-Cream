@@ -1,7 +1,4 @@
-.customer__reviews {
-  margin-bottom: 60px;
-  margin-top: 60px;
-
+.customer-reviews {
   display: block;
 }
 
@@ -28,10 +25,6 @@
   transform: translateX(-50%);
 }
 
-.house__icon {
-  fill: var(--cl-txt-accent-dark);
-}
-
 .bar {
   width: 12px;
   height: 12px;
@@ -47,10 +40,21 @@
   &:not(:last-child) {
     margin-right: 18px;
   }
+}
 
-  &:hover {
-    background-color: #d31342;
-  }
+.house__icon {
+  opacity: 0;
+}
+
+.house__icon {
+  display: block;
+}
+
+.bar:hover .house__icon,
+.bar:focus .house__icon {
+  fill: var(--cl-txt-accent-dark);
+  opacity: inherit;
+  background-color: #fff;
 }
 
 input[name='r'] {
@@ -74,7 +78,7 @@ input[name='r'] {
   margin: 0 auto;
 }
 
-.rewiews {
+.reviews {
   position: relative;
   margin: 0 auto;
   width: 280px;
@@ -105,7 +109,7 @@ input[name='r'] {
   );
 }
 
-.name {
+.customer__name {
   text-align: center;
   font-weight: 500;
   font-size: 14px;
@@ -123,15 +127,17 @@ input[name='r'] {
   display: block;
   position: absolute;
   top: 30px;
-  left: 45px;
+  left: 43px;
+}
+
+.customer {
+  position: relative;
 }
 
 .point {
+  padding-top: 16px;
   display: flex;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 16px;
+  justify-content: center;
 }
 
 .point__item {
