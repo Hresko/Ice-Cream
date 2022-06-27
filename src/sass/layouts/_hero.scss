@@ -1,5 +1,5 @@
 .hero {
-    position: relative;
+    // position: relative;
 
     overflow: hidden;
 
@@ -123,7 +123,7 @@ position: relative;
     font-size: 8px;
     line-height: 1.25;
 
-    transition: background-color var(--anim), color var(--anim);
+    // transition: background-color var(--anim), color var(--anim);
 
         &--red {
             background-color: var(--cl-txt-accent-dark);
@@ -134,12 +134,12 @@ position: relative;
             background-color: var(--cl-txt-white);
             color: var(--cl-txt-accent-dark);}
 
-        &:hover, &:focus {
-            background-color: var(--bgc-hover);
-            color: var(--cl-txt-accent-dark);
+        // &:hover, &:focus {
+        //     background-color: var(--bgc-hover);
+        //     color: var(--cl-txt-accent-dark);
 
-            transition: background-color var(--anim), color var(--anim);
-        }
+        //     transition: background-color var(--anim), color var(--anim);
+        // }
 
         @include mq(desktop) {
             height: 40px;
@@ -148,6 +148,21 @@ position: relative;
             font-size: 14px;
             line-height: 1.286;
         }
+}
+
+.hero__anchor {
+    width: 100%;
+    height: 100%;
+
+    transition: background-color var(--anim), color var(--anim);
+
+    &:hover,
+    &:focus {
+        background-color: var(--bgc-hover);
+        color: var(--cl-txt-accent-dark);
+
+        transition: background-color var(--anim), color var(--anim);
+    }
 }
 
 .hero__list-points {
@@ -360,121 +375,6 @@ z-index: 5;
     }
 }
 
-// .slider {
-//     width: 100%;
-//     max-width: 266px;
-//     height: 154px;
-//     text-align: left;
-//     overflow: hidden;
-//     position: relative;
-
-//     @include mq(mobile-only) {
-//         display: none;
-//     }
-
-//     @include mq(desktop) {
-//         max-width: 413px;
-//         height: 216px;
-//     }
-
-// }
-
-// .slider__list {
-//     display: flex;
-//     overflow-x: scroll;
-//     position: relative;
-//     scroll-behavior: smooth;
-//     scroll-snap-type: x mandatory;
-// }
-
-// .slider__item {
-//     display: flex;
-//     justify-content: center;
-//     align-items: flex-start;
-//     flex-shrink: 0;
-//     width: 100%;
-//     height: 154px;
-//     scroll-snap-align: center;
-//     transform-origin: center center;
-//     transform: scale(1);
-
-//     @include mq(desktop) {
-//         height: 216px;
-//     }
-// }
-
-// .slider__text {
-//     width: 114px;
-//     height: 48px;
-//     margin: 41px 0px 7px 0px;
-//     text-align: left;
-
-//     overflow: auto;
-
-//     font-family: var(--font-family-main);
-//     font-weight: 400;
-//     font-size: 8px;
-//     line-height: 1.5;
-    
-//     color: var(--cl-txt-white);
-
-//     @include mq(desktop) {
-//         width: 200px;
-//         height: 78px;
-//         margin: 68px 0px 20px 0px;
-//         font-size: 14px;
-//         line-height: 1.4;
-//     }
-
-//     &::-webkit-scrollbar {
-//         display: none;
-//     }
-// }
-
-// .slider__btn {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-//     height: 18px;
-//     width: 18px;
-//     border-radius: 50px;
-
-//     background-color: var(--cl-txt-white);
-
-//     transition: background-color var(--anim), color var(--anim);
-
-//     @include mq(desktop) {
-//         height: 26px;
-//         width: 26px;
-//     }
-
-//     &:hover, &:focus {
-//         background-color: var(--bgc-hover);
-                
-//         transition: background-color var(--anim), color var(--anim);
-//     }
-// }
-
-// .slider__icon {
-//     fill: var(--cl-txt-accent-dark);
-
-//     @include mq(desktop) {
-//         height: 10px;
-//         width: 10px;
-//     }
-// }
-
-// .slider__img {
-//     width: 152px;
-//     height: 154px;
-
-//     @include mq(desktop) {
-//         width: 213px;
-//         height: 216px;
-//     }
-// }
-
 .hero__bg-ellipse {
     position: absolute;
     right: -82;
@@ -492,7 +392,7 @@ z-index: 5;
 
     @include mq(tablet) {
         right: 153;
-        bottom: 40;
+        bottom: 24;
 
         width: 333px;
         height: 333px;
@@ -500,7 +400,7 @@ z-index: 5;
 
     @include mq(desktop) {
         right: 133;
-        bottom: 77;
+        bottom: 17;
 
         width: 534px;
         height: 534px;
