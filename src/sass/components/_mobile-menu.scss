@@ -43,9 +43,6 @@
 
 // mobile button
 .mobile-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
     z-index: 11;
 
     display: flex;
@@ -74,32 +71,35 @@
     }
 
     @include mq(tablet) {
-        top: 40px;
+        margin-left: 31px;
     }
 
     @include mq(desktop) {
         display: none;
     }
-}
 
-.mobile-btn__icon {
-    fill: currentColor;
-}
 
-.mobile-btn__icon-open {
-    display: block;
+    &__icon {
+        fill: currentColor;
 
-    .mobile-btn.is-open & {
-        display: none;
-    }
-}
 
-.mobile-btn__icon-close {
-    display: none;
+        &-open {
+            display: block;
 
-    .mobile-btn.is-open & {
-        position: fixed;
-        display: block;
+            .mobile-btn.is-open & {
+                display: none;
+            }
+        }
+
+
+        &-close {
+            display: none;
+
+            .mobile-btn.is-open & {
+                position: fixed;
+                display: block;
+            }
+        }
     }
 }
 
