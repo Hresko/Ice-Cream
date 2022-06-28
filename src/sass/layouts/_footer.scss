@@ -21,6 +21,7 @@
 
         @include mq(tablet) {
             max-width: 340px;
+            margin-bottom: 0;
         }
     }
 
