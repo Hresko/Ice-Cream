@@ -1,3 +1,23 @@
+.contacts {
+
+    @include mq(mobile) {
+        background-image: linear-gradient(to top, 
+        #FFF5F6 78%,
+        #ffffff 22%,);
+    }
+
+    @include mq(tablet) {
+        background-image: linear-gradient(to top,
+        #FFF5F6 60%,
+        #ffffff 40%, );
+    }
+
+    @include mq(desktop) {
+        background-image: linear-gradient(to top,
+        #FFF5F6 80%,
+        #ffffff 20%, );
+    }
+}
 
 .contact {
     align-items: center;
