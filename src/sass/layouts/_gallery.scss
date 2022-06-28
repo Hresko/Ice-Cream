@@ -14,14 +14,29 @@
         margin: -8px;
       }
     }
+    &__column {
+      &:hover, &focus{
+        z-index: 2;
+      }
+      &--high {
+        transform: translateY(-15%);
+      }
+    }
 
     &__picture {
+      display: block;
+      z-index: 3;
       margin: 3px;
+
       @include mq(tablet) {
         margin: 6px;
       }
       @include mq(desktop) {
         margin: 8px;
       }
+      &:hover, &focus {
+        transform: scale(1.4);
+        transition: transform var(--slow-anim);
         }
+    }
 }
