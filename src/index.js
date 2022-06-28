@@ -1,5 +1,7 @@
 
+
 // ========= header - scroll =========
+
 window.onscroll = () => changeHeaderBackground();
 
 function changeHeaderBackground() {
@@ -71,7 +73,8 @@ function setActiveLink(arr) {
   }
 })();
 
-// ========= animations =========
-// AOS.init();
+
+
+
 
 
