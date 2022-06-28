@@ -1,4 +1,8 @@
-
+.contacts {
+    background-image: linear-gradient(to top,
+        --bgc-accent-main 40%,
+        --bgc-accent-cream 65%);
+}
 .contact {
     align-items: center;
     list-style: none;
