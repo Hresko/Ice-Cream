@@ -1,0 +1,27 @@
+
+.gallery {
+    background-image: linear-gradient(to bottom,rgba(255, 245, 246, 1) ,rgb(255, 255, 255) );
+
+    &__columns {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: -3px;
+      @include mq(tablet) {
+        margin: -6px;
+      }
+      @include mq(desktop) {
+        margin: -8px;
+      }
+    }
+
+    &__picture {
+      margin: 3px;
+      @include mq(tablet) {
+        margin: 6px;
+      }
+      @include mq(desktop) {
+        margin: 8px;
+      }
+        }
+}

@@ -1,0 +1,348 @@
+// ========== modal window  ==========
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    padding: 40px 20px;
+
+    width: calc(100vw - 30px);
+    max-height: calc(100vh - 30px);
+
+    background: var(--bgc-main);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+    overflow-y: auto;
+    opacity: 1;
+    transition: transform var(--slow-anim), visibility var(--slow-anim),
+        opacity var(--slow-anim);
+
+    .backdrop.is-hidden>& {
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+
+    @include mq(mobile) {
+        width: 300px;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    @include mq(tablet) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 450px;
+        padding: 40px 30px;
+    }
+
+    @include mq(desktop) {
+        width: 540px;
+        min-height: 600px;
+        padding: 40px 40px;
+    }
+
+    // ========== title ==========
+
+    &__title {
+        margin-bottom: 12px;
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.13;
+        text-align: center;
+
+        @include mq(tablet) {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 1.15;
+        }
+    }
+
+    // ========== modal-button ==========
+
+    &__btn-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 25px;
+        height: 25px;
+
+        color: var(--cl-txt-main);
+        background: var(--bgc-main);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+
+        cursor: pointer;
+        transition: color var(--slow-anim);
+
+        &:hover,
+        &:focus {
+            color: var(--cl-txt-accent-dark);
+        }
+
+        @include mq(tablet) {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+}
+
+// ========== modal-form ==========
+
+.form {
+    display: block;
+    text-align: center;
+
+    // ========== user-contacts ==========
+    &__field {
+        display: block;
+        margin-bottom: 10px;
+
+        text-align: left;
+    }
+
+    &__label {
+        display: inline-block;
+        margin-bottom: 4px;
+
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+
+        color: var(--cl-txt-main);
+    }
+
+    &__wrapper {
+        position: relative;
+        display: block;
+    }
+
+    &__input {
+        display: flex;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 42px;
+        padding-right: 16px;
+
+        width: 100%;
+        height: 40px;
+
+        color: var(--cl-txt-main);
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+
+        transition: border-color var(--slow-anim);
+
+        .form__field:focus-within & {
+            outline: 0;
+            border-color: var(--cl-txt-accent-dark);
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+        fill: var(--cl-txt-second);
+
+        transition: fill var(--slow-anim);
+
+        .form__field:focus-within & {
+            fill: var(--cl-txt-accent-dark);
+        }
+    }
+
+    // ========== user-comment ==========
+    &__field-comment {
+        margin-bottom: 20px;
+    }
+
+    &__comment {
+        display: flex;
+        padding: 12px 16px;
+
+        width: 100%;
+        height: 100px;
+        resize: none;
+
+        line-height: 1.14;
+        letter-spacing: 0.01em;
+
+        color: var(--cl-txt-main);
+
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+
+        transition: border-color var(--slow-anim);
+
+
+        &:hover,
+        &:focus,
+        &:active {
+            outline: 0;
+            border-color: var(--cl-txt-accent-dark);
+        }
+
+        &::placeholder {
+            color: rgba(144, 126, 130, 0.7);
+        }
+
+        @include mq(tablet) {
+
+            height: 120px;
+        }
+
+    }
+
+    // ========== checkbox ==========
+    &__field-checkbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 30px;
+    }
+
+    &__wrapper-checkbox {
+        position: relative;
+
+        display: block;
+        margin-right: 7px;
+
+        width: 16px;
+        height: 15px;
+
+        cursor: pointer;
+    }
+
+    &__icon--checked {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+
+        opacity: 0;
+        transition: opacity var(--slow-anim);
+
+        .form__input-checkbox:checked+& {
+            opacity: 1;
+        }
+    }
+
+    &__icon--unchecked {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+
+        width: 16px;
+        height: 15px;
+
+        border: 2px solid var(--cl-txt-main);
+        border-radius: 2px;
+
+        transition: border-color var(--slow-anim);
+
+        .form__input-checkbox:checked~&,
+        .form__input-checkbox:focus~&,
+        .form__input-checkbox:hover~& {
+            border-color: var(--cl-txt-accent-dark);
+        }
+    }
+
+    &__label-checkbox {
+        margin-bottom: 0;
+
+        font-size: 12px;
+        line-height: 1.17;
+
+
+        color: var(--cl-txt-main);
+        cursor: pointer;
+        user-select: none;
+
+        @include mq(desktop) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
+    }
+
+    &__agreement {
+        color: var(--cl-txt-accent-dark);
+    }
+
+    &__btn {
+        padding: 10px 55px;
+    }
+}
+
+// modal contacts map
+
+.responsive-map-container {
+    position: relative;
+    padding-bottom: 100%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-map-container iframe,
+.responsive-map-container object,
+.responsive-map-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+//modal contacts franchize
+
+.modal-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contacts__title {
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.modal-contacts__subtitle {
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.modal-contacts__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.modal-contacts__form{
+    width: 100%;
+}
+
+.modal-contacts__btn {
+    margin-top: 30px;
+}

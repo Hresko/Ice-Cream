@@ -4,7 +4,7 @@
     right: 0;
     z-index: 11;
 
-    width: 320px;
+    width: 250px;
     height: 100vh;
     padding-top: 60px;
     padding-right: 20px;
@@ -24,6 +24,12 @@
     &.is-open {
         visibility: visible;
         transform: translateX(0);
+        transition: transform var(--slow-anim);
+    }
+
+    @include mq(tablet) {
+        width: 255px;
+        padding-top: 84px;
     }
 
     @include mq(desktop) {
@@ -37,9 +43,6 @@
 
 // mobile button
 .mobile-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
     z-index: 11;
 
     display: flex;
@@ -67,29 +70,36 @@
         overflow-y: scroll;
     }
 
+    @include mq(tablet) {
+        margin-left: 31px;
+    }
+
     @include mq(desktop) {
         display: none;
     }
-}
 
-.mobile-btn__icon {
-    fill: currentColor;
-}
 
-.mobile-btn__icon-open {
-    display: block;
+    &__icon {
+        fill: currentColor;
 
-    .mobile-btn.is-open & {
-        display: none;
-    }
-}
 
-.mobile-btn__icon-close {
-    display: none;
+        &-open {
+            display: block;
 
-    .mobile-btn.is-open & {
-        position: fixed;
-        display: block;
+            .mobile-btn.is-open & {
+                display: none;
+            }
+        }
+
+
+        &-close {
+            display: none;
+
+            .mobile-btn.is-open & {
+                position: fixed;
+                display: block;
+            }
+        }
     }
 }
 
@@ -108,6 +118,7 @@
     }
 
     & .navigation__link {
+        position: relative;
         display: flex;
         padding: 0;
 
@@ -116,9 +127,34 @@
         line-height: 1.28;
 
         transition: color var(--anim);
+
+        &::after {
+            position: absolute;
+            content: ' ';
+            bottom: -11px;
+            left: -20px;
+
+            height: 1px;
+            width: 250px;
+
+            background-color: #E18298;
+        }
     }
+
 
     & .navigation__link--current {
         color: var(--cl-txt-accent-dark);
+
+        &::before {
+            position: absolute;
+            content: ' ';
+            top: -11px;
+            left: -20px;
+
+            height: 1px;
+            width: 250px;
+
+            background-color: #E18298;
+        }
     }
 }

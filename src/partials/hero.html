@@ -6,11 +6,16 @@
           ice cream made with <span class="hero__subtitle">passion</span>
         </h1>
         <ul class="hero__list-anchors list">
-          <li class="hero__item-anchor hero__item-anchor--red">
-            <a class="hero__anchor link" href="#products">Products</a>
+          <li class="hero__item-anchor">
+            <a
+              class="hero__anchor hero__anchor--mode-red link"
+              href="#products"
+            >
+              Products
+            </a>
           </li>
-          <li class="hero__item-anchor hero__item-anchor--white">
-            <a class="hero__anchor link" href="#about">How it’s made?</a>
+          <li class="hero__item-anchor">
+            <a class="hero__anchor link" href="#about"> How it’s made? </a>
           </li>
         </ul>
       </div>
@@ -25,324 +30,318 @@
         </li>
       </ul>
     </div>
+
+    <!-- Slider -->
     <div class="slider">
-      <ul class="slider__list list">
-        <li class="slider__item" id="slide__1">
-          <picture class="slider__picture"
-            ><source
-              media="(min-width: 768px)"
-              srcset="
-                ../src/images/hero/hero-milk_lg.png    1x,
-                ../src/images/hero/hero-milk_lg@2x.png 2x
-              " />
-            <source
-              media="(min-width: 320px)"
-              srcset="
-                ../src/images/hero/hero-milk_md.png    1x,
-                ../src/images/hero/hero-milk_md@2x.png 2x
-              " />
-            <img
-              class="slider__img"
-              src="../src/images/hero/hero-milk_md.png"
-              alt="Bottle of milk"
-              loading="lazy"
-          /></picture>
-          <div class="slider__desc">
-            <p class="slider__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et
-            </p>
-            <a href="#slide__2" class="slider__btn link">
-              <svg class="slider__icon" width="10" height="10">
-                <use href="../src/images/sprite.svg#arrow-right"></use>
-              </svg>
-            </a>
-          </div>
-        </li>
-        <li class="slider__item" id="slide__2">
-          <picture class="slider__picture"
-            ><source
-              media="(min-width: 768px)"
-              srcset="
-                ../src/images/hero/hero-milk_2_lg.png    1x,
-                ../src/images/hero/hero-milk_2_lg@2x.png 2x
-              " />
-            <source
-              media="(min-width: 320px)"
-              srcset="
-                ../src/images/hero/hero-milk_2_md.png    1x,
-                ../src/images/hero/hero-milk_2_md@2x.png 2x
-              " />
-            <img
-              class="slider__img"
-              src="../src/images/hero/hero-milk_2_md.png"
-              alt="Nice Guy"
-              loading="lazy"
-          /></picture>
-          <div class="slider__desc">
-            <p class="slider__text">I like Ice-cream!</p>
-            <a href="#slide__3" class="slider__btn link">
-              <svg class="slider__icon" width="10" height="10">
-                <use href="../src/images/sprite.svg#arrow-right"></use>
-              </svg>
-            </a>
-          </div>
-        </li>
-        <li class="slider__item" id="slide__3">
-          <picture class="slider__picture"
-            ><source
-              media="(min-width: 768px)"
-              srcset="
-                ../src/images/hero/hero-milk_3_lg.png    1x,
-                ../src/images/hero/hero-milk_3_lg@2x.png 2x
-              " />
-            <source
-              media="(min-width: 320px)"
-              srcset="
-                ../src/images/hero/hero-milk_3_md.png    1x,
-                ../src/images/hero/hero-milk_3_md@2x.png 2x
-              " />
-            <img
-              class="slider__img"
-              src="../src/images/hero/hero-milk_3_md.png"
-              alt="Bottle of milk"
-              loading="lazy"
-          /></picture>
-          <div class="slider__desc">
-            <p class="slider__text">Here We Go!!!</p>
-            <a href="#slide__1" class="slider__btn link">
-              <svg class="slider__icon" width="10" height="10">
-                <use href="../src/images/sprite.svg#arrow-right"></use>
-              </svg>
-            </a>
-          </div>
-        </li>
-      </ul>
+      <input
+        class="slider__input slider__input--1"
+        type="radio"
+        id="s1"
+        name="Slides"
+        checked
+      />
+      <input
+        class="slider__input slider__input--2"
+        type="radio"
+        id="s2"
+        name="Slides"
+      />
+      <input
+        class="slider__input slider__input--3"
+        type="radio"
+        id="s3"
+        name="Slides"
+      />
+      <div class="slider__item" id="slide__1">
+        <picture class="slider__picture"
+          ><source
+            media="(min-width: 1200px)"
+            srcset="
+              ../src/images/hero/hero-milk_lg.png    1x,
+              ../src/images/hero/hero-milk_lg@2x.png 2x
+            " />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../src/images/hero/hero-milk_md.png    1x,
+              ../src/images/hero/hero-milk_md@2x.png 2x
+            " />
+          <img
+            class="slider__img"
+            src="../src/images/hero/hero-milk_md.png"
+            alt="Bottle of milk"
+            loading="lazy"
+        /></picture>
+        <p class="slider__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <label class="slider__btn" for="s2">
+          <svg class="slider__icon" width="7" height="7">
+            <use href="../src/images/sprite.svg#arrow-right"></use>
+          </svg>
+        </label>
+      </div>
+      <div class="slider__item" id="slide__2">
+        <picture class="slider__picture"
+          ><source
+            media="(min-width: 1200px)"
+            srcset="
+              ../src/images/hero/hero-milk_2_lg.png    1x,
+              ../src/images/hero/hero-milk_2_lg@2x.png 2x
+            " />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../src/images/hero/hero-milk_2_md.png    1x,
+              ../src/images/hero/hero-milk_2_md@2x.png 2x
+            " />
+          <img
+            class="slider__img"
+            src="../src/images/hero/hero-milk_2_md.png"
+            alt="Nice Guy"
+            loading="lazy"
+        /></picture>
+        <p class="slider__text">
+          I like Ice-cream! I like Ice-cream! I like Ice-cream! I like
+          Ice-cream! I like Ice-cream! I like Ice-cream!
+        </p>
+        <label class="slider__btn" for="s3">
+          <svg class="slider__icon" width="7" height="7">
+            <use href="../src/images/sprite.svg#arrow-right"></use>
+          </svg>
+        </label>
+      </div>
+      <div class="slider__item" id="slide__3">
+        <picture class="slider__picture"
+          ><source
+            media="(min-width: 1200px)"
+            srcset="
+              ../src/images/hero/hero-milk_3_lg.png    1x,
+              ../src/images/hero/hero-milk_3_lg@2x.png 2x
+            " />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../src/images/hero/hero-milk_3_md.png    1x,
+              ../src/images/hero/hero-milk_3_md@2x.png 2x
+            " />
+          <img
+            class="slider__img"
+            src="../src/images/hero/hero-milk_3_md.png"
+            alt="Bottle of milk"
+            loading="lazy"
+        /></picture>
+        <p class="slider__text">
+          Here We
+          Gooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-ooooo-!!!
+        </p>
+        <label class="slider__btn" for="s1">
+          <svg class="slider__icon" width="7" height="7">
+            <use href="../src/images/sprite.svg#arrow-right"></use>
+          </svg>
+        </label>
+      </div>
     </div>
     <div class="hero__bg-ellipse"></div>
-    <!-- <picture class="hero__icecream-picture"
+    <picture class="hero__icecream-picture hero__icecream-picture--1"
       ><source
-        media="(min-width: 768px)"
-        srcset="
-          ../src/images/hero/hero-icecream_lg.png    1x,
-          ../src/images/hero/hero-icecream_lg@2x.png 2x
-        " />
-      <source
-        media="(min-width: 320px)"
-        srcset="
-          ../src/images/hero/hero-icecream_md.png    1x,
-          ../src/images/hero/hero-icecream_md@2x.png 2x
-        " />
-      <source
-        media="(max-width: 319px)"
-        srcset="
-          ../src/images/hero/hero-icecream_sm.png    1x,
-          ../src/images/hero/hero-icecream_sm@2x.png 2x
-        " />
-      <img
-        class="hero__icecream-img"
-        src="../src/images/hero/hero-icecream_sm.png"
-        alt="Ice-cream cone"
-        loading="lazy" />
-    </picture> -->
-    <picture class="hero__icecream-picture-1"
-      ><source
-        media="(min-width: 768px)"
+        media="(min-width: 1200px)"
         srcset="
           ../src/images/hero/hero-icecream_lg_1.png    1x,
           ../src/images/hero/hero-icecream_lg_1@2x.png 2x
         "
       />
       <source
-        media="(min-width: 320px)"
+        media="(min-width: 768px)"
         srcset="
           ../src/images/hero/hero-icecream_md_1.png    1x,
           ../src/images/hero/hero-icecream_md_1@2x.png 2x
         "
       />
       <source
-        media="(max-width: 319px)"
+        media="(max-width: 767px)"
         srcset="
           ../src/images/hero/hero-icecream_sm_1.png    1x,
           ../src/images/hero/hero-icecream_sm_1@2x.png 2x
         "
       />
       <img
-        class="hero__icecream-img-1"
+        class="hero__icecream-img--1 hero__icecream-img"
         src="../src/images/hero/hero-icecream_sm_1.png"
         alt="Ice-cream cone"
         loading="lazy"
       />
     </picture>
-    <picture class="hero__icecream-picture-2"
+    <picture class="hero__icecream-picture hero__icecream-picture--2"
       ><source
-        media="(min-width: 768px)"
+        media="(min-width: 1200px)"
         srcset="
           ../src/images/hero/hero-icecream_lg_2.png    1x,
           ../src/images/hero/hero-icecream_lg_2@2x.png 2x
         "
       />
       <source
-        media="(min-width: 320px)"
+        media="(min-width: 768px)"
         srcset="
           ../src/images/hero/hero-icecream_md_2.png    1x,
           ../src/images/hero/hero-icecream_md_2@2x.png 2x
         "
       />
       <source
-        media="(max-width: 319px)"
+        media="(max-width: 767px)"
         srcset="
           ../src/images/hero/hero-icecream_sm_2.png    1x,
           ../src/images/hero/hero-icecream_sm_2@2x.png 2x
         "
       />
       <img
-        class="hero__icecream-img-2"
+        class="hero__icecream-img--2 hero__icecream-img"
         src="../src/images/hero/hero-icecream_sm_2.png"
         alt="Ice-cream cone"
         loading="lazy"
       />
     </picture>
-    <picture class="hero__icecream-picture-3"
+    <picture class="hero__icecream-picture hero__icecream-picture--3"
       ><source
-        media="(min-width: 768px)"
+        media="(min-width: 1200px)"
         srcset="
           ../src/images/hero/hero-icecream_lg_3.png    1x,
           ../src/images/hero/hero-icecream_lg_3@2x.png 2x
         "
       />
       <source
-        media="(min-width: 320px)"
+        media="(min-width: 768px)"
         srcset="
           ../src/images/hero/hero-icecream_md_3.png    1x,
           ../src/images/hero/hero-icecream_md_3@2x.png 2x
         "
       />
       <source
-        media="(max-width: 319px)"
+        media="(max-width: 767px)"
         srcset="
           ../src/images/hero/hero-icecream_sm_3.png    1x,
           ../src/images/hero/hero-icecream_sm_3@2x.png 2x
         "
       />
       <img
-        class="hero__icecream-img-3"
+        class="hero__icecream-img--3 hero__icecream-img"
         src="../src/images/hero/hero-icecream_sm_3.png"
         alt="Ice-cream cone"
         loading="lazy"
       />
     </picture>
-    <picture class="hero__icecream-picture-4"
+    <picture class="hero__icecream-picture hero__icecream-picture--4"
       ><source
-        media="(min-width: 768px)"
+        media="(min-width: 1200px)"
         srcset="
           ../src/images/hero/hero-icecream_lg_4.png    1x,
           ../src/images/hero/hero-icecream_lg_4@2x.png 2x
         "
       />
       <source
-        media="(min-width: 320px)"
+        media="(min-width: 768px)"
         srcset="
           ../src/images/hero/hero-icecream_md_4.png    1x,
           ../src/images/hero/hero-icecream_md_4@2x.png 2x
         "
       />
       <source
-        media="(max-width: 319px)"
+        media="(max-width: 767px)"
         srcset="
           ../src/images/hero/hero-icecream_sm_4.png    1x,
           ../src/images/hero/hero-icecream_sm_4@2x.png 2x
         "
       />
       <img
-        class="hero__icecream-img-4"
+        class="hero__icecream-img--4 hero__icecream-img"
         src="../src/images/hero/hero-icecream_sm_4.png"
         alt="Ice-cream cone"
         loading="lazy"
       />
     </picture>
-    <picture class="hero__icecream-picture-5"
+    <picture class="hero__icecream-picture hero__icecream-picture--5"
       ><source
-        media="(min-width: 768px)"
+        media="(min-width: 1200px)"
         srcset="
           ../src/images/hero/hero-icecream_lg_5.png    1x,
           ../src/images/hero/hero-icecream_lg_5@2x.png 2x
         "
       />
       <source
-        media="(min-width: 320px)"
+        media="(min-width: 768px)"
         srcset="
           ../src/images/hero/hero-icecream_md_5.png    1x,
           ../src/images/hero/hero-icecream_md_5@2x.png 2x
         "
       />
       <source
-        media="(max-width: 319px)"
+        media="(max-width: 767px)"
         srcset="
           ../src/images/hero/hero-icecream_sm_5.png    1x,
           ../src/images/hero/hero-icecream_sm_5@2x.png 2x
         "
       />
       <img
-        class="hero__icecream-img-5"
+        class="hero__icecream-img--5 hero__icecream-img"
         src="../src/images/hero/hero-icecream_sm_5.png"
         alt="Ice-cream cone"
         loading="lazy"
       />
     </picture>
-    <picture class="hero__icecream-picture-6"
+    <picture class="hero__icecream-picture hero__icecream-picture--6"
       ><source
-        media="(min-width: 768px)"
+        media="(min-width: 1200px)"
         srcset="
           ../src/images/hero/hero-icecream_lg_6.png    1x,
           ../src/images/hero/hero-icecream_lg_6@2x.png 2x
         "
       />
       <source
-        media="(min-width: 320px)"
+        media="(min-width: 768px)"
         srcset="
           ../src/images/hero/hero-icecream_md_6.png    1x,
           ../src/images/hero/hero-icecream_md_6@2x.png 2x
         "
       />
       <source
-        media="(max-width: 319px)"
+        media="(max-width: 767px)"
         srcset="
           ../src/images/hero/hero-icecream_sm_6.png    1x,
           ../src/images/hero/hero-icecream_sm_6@2x.png 2x
         "
       />
       <img
-        class="hero__icecream-img-6"
+        class="hero__icecream-img--6 hero__icecream-img"
         src="../src/images/hero/hero-icecream_sm_6.png"
         alt="Ice-cream cone"
         loading="lazy"
       />
     </picture>
-    <picture class="hero__icecream-picture-7"
+    <picture class="hero__icecream-picture hero__icecream-picture--7"
       ><source
-        media="(min-width: 768px)"
+        media="(min-width: 1200px)"
         srcset="
           ../src/images/hero/hero-icecream_lg_7.png    1x,
           ../src/images/hero/hero-icecream_lg_7@2x.png 2x
         "
       />
       <source
-        media="(min-width: 320px)"
+        media="(min-width: 768px)"
         srcset="
           ../src/images/hero/hero-icecream_md_7.png    1x,
           ../src/images/hero/hero-icecream_md_7@2x.png 2x
         "
       />
       <source
-        media="(max-width: 319px)"
+        media="(max-width: 767px)"
         srcset="
           ../src/images/hero/hero-icecream_sm_7.png    1x,
           ../src/images/hero/hero-icecream_sm_7@2x.png 2x
         "
       />
       <img
-        class="hero__icecream-img-7"
+        class="hero__icecream-img--7 hero__icecream-img"
         src="../src/images/hero/hero-icecream_sm_7.png"
         alt="Ice-cream cone"
         loading="lazy"
@@ -350,14 +349,14 @@
     </picture>
     <picture class="hero__girl-picture"
       ><source
-        media="(min-width: 768px)"
+        media="(min-width: 1200px)"
         srcset="
           ../src/images/hero/hero-girl_lg.png    1x,
           ../src/images/hero/hero-girl_lg@2x.png 2x
         "
       />
       <source
-        media="(min-width: 320px)"
+        media="(min-width: 768px)"
         srcset="
           ../src/images/hero/hero-girl_md.png    1x,
           ../src/images/hero/hero-girl_md@2x.png 2x
