@@ -14,13 +14,12 @@
   });
 })();
 
-// When clicks anywhere outside of the modal, close it
+// When clicks anywhere outside of the menu, close it
 
 // refs.modal.forEach(item => {
 //   item.addEventListener('click', e => {
 //     let currentMenu = e.currentTarget;
 //     const targetMenu = e.target;
-//     closeModal(currentMenu);
-//     closeAndStopVideo(targetMenu);
+//     closeMenu(currentMenu);
 //   });
 // });
