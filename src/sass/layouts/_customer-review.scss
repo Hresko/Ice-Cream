@@ -1,5 +1,14 @@
 .customer-reviews {
   display: block;
+  padding: 0;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 60px 0;
+  }
 }
 
 .slider__reviews {
@@ -7,6 +16,14 @@
   height: 517px;
   position: relative;
   overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    height: 362px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 350px;
+  }
 }
 
 .slider__reviews.container {
@@ -44,9 +61,6 @@
 
 .house__icon {
   opacity: 0;
-}
-
-.house__icon {
   display: block;
 }
 
@@ -81,8 +95,9 @@ input[name='r'] {
 .reviews {
   position: relative;
   margin: 0 auto;
-  width: 280px;
+  max-width: 280px;
   height: 308px;
+  width: 100%;
   font-weight: 500;
   font-size: 12px;
   line-height: 2.58;
@@ -92,9 +107,21 @@ input[name='r'] {
   padding-bottom: 17px;
   margin-top: 32px;
   background-color: #fafafa;
+
+  @media screen and (min-width: 768px) {
+    max-width: 620px;
+    height: 164px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 968px;
+    height: 138px;
+    width: 100%;
+  }
 }
 
-.text {
+.post-text {
   margin: 0 auto;
   max-width: 180px;
   height: 248px;
@@ -107,6 +134,32 @@ input[name='r'] {
     #e1e1e1 30px,
     #e1e1e1 31px
   );
+
+  @media screen and (min-width: 768px) {
+    max-width: 608px;
+    height: 108px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000;
+    padding: 0 40px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.14;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 822px;
+    height: 75px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000;
+    padding: 0 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.87;
+  }
 }
 
 .customer__name {
@@ -118,16 +171,35 @@ input[name='r'] {
   color: #000000;
 }
 
-.text::before {
+.post-text::before {
   content: '';
   width: 54px;
   height: 40px;
-  background-image: url(/src/images/customer/“.png);
+  background-image: url(/src/images/customer/quotes-mob-desk.png);
   background-size: contain;
   display: block;
   position: absolute;
   top: 30px;
   left: 43px;
+  background-repeat: no-repeat;
+  color: #e1e1e1;
+  opacity: 0.6;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(/src/images/customer/quotes-tab.png);
+    width: 60.35px;
+    height: 40px;
+    top: 27px;
+    left: 7px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(/src/images/customer/quotes-mob-desk.png);
+    width: 54px;
+    height: 40px;
+    top: 27px;
+    left: 70px;
+  }
 }
 
 .customer {
@@ -138,6 +210,10 @@ input[name='r'] {
   padding-top: 16px;
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    padding-top: 4px;
+  }
 }
 
 .point__item {
