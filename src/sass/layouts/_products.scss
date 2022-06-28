@@ -325,7 +325,12 @@
   fill: var(--cl-txt-accent-dark);
 }
 
+////////// Products Menu //////////
+
 .products__menu {
+  // display: inline-block;
+  // align-items: center;
+  // justify-content: center;
   padding-top: 65px;
 
   top: 100px;
@@ -351,9 +356,9 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @include mq(tablet) {
-        padding-top: 0;
-      }
+  @include mq(tablet-only) {
+    padding-top: 0;
+  }
 
   &-ice-cream {
     color: #d41443;
@@ -372,6 +377,7 @@
 }
 
 .products__menu-item {
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -385,9 +391,6 @@
     margin-right: 10px;
     width: 22px;
     height: 22px;
-    // justify-content: center;
-    // align-items: center;
-    // text-align: center;
     display: inline-block;
     background-size: contain;
     border-radius: 50%;
