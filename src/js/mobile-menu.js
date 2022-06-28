@@ -13,13 +13,3 @@
     mobileMenuRef.classList.toggle('is-open');
   });
 })();
-
-// When clicks anywhere outside of the menu, close it
-
-// refs.modal.forEach(item => {
-//   item.addEventListener('click', e => {
-//     let currentMenu = e.currentTarget;
-//     const targetMenu = e.target;
-//     closeMenu(currentMenu);
-//   });
-// });
