@@ -1,3 +1,23 @@
+.contacts {
+
+    @include mq(mobile) {
+        background-image: linear-gradient(to top, 
+        #FFF5F6 78%,
+        #ffffff 22%,);
+    }
+
+    @include mq(tablet) {
+        background-image: linear-gradient(to top,
+        #FFF5F6 60%,
+        #ffffff 40%, );
+    }
+
+    @include mq(desktop) {
+        background-image: linear-gradient(to top,
+        #FFF5F6 80%,
+        #ffffff 20%, );
+    }
+}
 
 .contact {
     align-items: center;
@@ -47,13 +67,24 @@
     font-family: var(--font-family-main);
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
+    line-height: 186%;
     align-items: center;
     text-align: center;
     justify-content: center;
     letter-spacing: 0.04em;
     border-radius: 4px;
+
+    @include mq(mobile) {
+        font-size: 12px;       
+    }
+
+    @include mq(tablet) {
+        font-size: 16px;
+    }
+
+    @include mq(desktop) {
+        font-size: 16px;
+    }
 }
 
 .contact__point--first {
@@ -98,53 +129,21 @@
 }
 
 .contact__address {
-    margin-bottom: 48px;
-}
-
-.contact__address::after {
-    content: "";
-    position: absolute;
-    margin-top: 12px;
+    margin-bottom: 24px;
     border-bottom: 1px solid var(--cl-txt-light);
-
-    @include mq(mobile) {
-        width: 216px;
-    }
-
-    @include mq(tablet) {
-        width: 160px;
-    }
-
-    @include mq(desktop) {
-        width: 288px;
-    }
 }
 
-.contact-dates {
-    margin-bottom: 48px;
-    &::after {
-        content: "";
-        position: absolute;
-        margin-top: 24px;
-        width: 216px;
-        border-bottom: 1px solid var(--cl-txt-light);
-
-        @include mq(mobile) {
-            width: 216px;
-        }
-    
-        @include mq(tablet) {
-            width: 160px;
-        }
-    
-        @include mq(desktop) {
-            width: 288px;
-        }
-    }
+.contact-date {
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--cl-txt-light);
 }
 
 .time {
     color: var(--cl-txt-accent-light);
+}
+
+.contact-date__item:last-child {
+    margin-bottom: 24px;
 }
 
 .contact-date__item:not(:last-child){
@@ -156,19 +155,47 @@
     font-family: var(--font-family-main);
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 1.86;
+    line-height: 186%;
     letter-spacing: 0.04em;
     color: var(--cl-txt-main);
+
+    @include mq(mobile) {
+        font-size: 12px;   
+    }
+
+    @include mq(tablet) {
+        font-size: 14px;
+    }
+
+    @include mq(desktop) {
+        font-size: 16px;
+    }
 }
 
 .contact__text {
     font-family: var(--font-family-main);
     font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;
+    font-weight: 500;  
     color: var(--cl-txt-second);
+    margin-bottom: 24px;
+
+    @include mq(mobile) {
+        margin-right: 29px;
+        font-size: 12px;
+        line-height: 150%;
+    }
+
+    @include mq(tablet) {
+        margin-right: auto;
+        font-size: 12px;
+        line-height: 166%;
+    }
+
+    @include mq(desktop) {
+        margin-right: 29px;
+        font-size: 16px;
+        line-height: 183%;
+    }
 }
 
 .mail,
@@ -242,13 +269,14 @@
     &:focus {
         color: var(--cl-txt-accent-dark);
         background-color: var(--bgc-main);
+        filter: drop-shadow(0px -4px 4px rgba(212, 20, 67, 0.25));
     }
 }
 
 .contact__btn--second {
     color: var(--cl-txt-accent-dark);
     background-color: var(--bgc-main);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 4px 4px rgba(212, 20, 67, 0.25));
 
     transition: color var(--anim), background-color var(--anim);
     
