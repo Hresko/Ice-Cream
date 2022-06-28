@@ -6,15 +6,17 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: -3px;
+      gap: 3px;
+
       @include mq(tablet) {
-        margin: -6px;
+        gap: 6px;
       }
       @include mq(desktop) {
-        margin: -8px;
+        gap: 8px;
       }
     }
     &__column {
+      
       &:hover, &focus{
         z-index: 2;
       }
@@ -25,15 +27,17 @@
 
     &__picture {
       display: block;
+      &--top {
+        margin-bottom: 3px ;
+        @include mq(tablet) {
+          margin-bottom: 6px;
+        }
+        @include mq(desktop) {
+          margin-bottom: 8px;
+        }
+      }
       z-index: 3;
-      margin: 3px;
 
-      @include mq(tablet) {
-        margin: 6px;
-      }
-      @include mq(desktop) {
-        margin: 8px;
-      }
       &:hover, &focus {
         transform: scale(1.4);
         transition: transform var(--slow-anim);
