@@ -27,6 +27,7 @@
       display: block;
       z-index: 3;
       margin: 3px;
+
       @include mq(tablet) {
         margin: 6px;
       }
@@ -34,7 +35,7 @@
         margin: 8px;
       }
       &:hover, &focus {
-        transform: scale(1.6) ;
+        transform: scale(1.4);
         transition: transform var(--slow-anim);
         }
     }
