@@ -3,8 +3,9 @@
     $tablet: 768px;
     $desktop: 1200px;
 
+
     @if $type =='mobile-only' {
-        @media screen and (max-width: #{$tablet - 0.02}) {
+        @media screen and (min-width: $mobile) and (max-width: #{$tablet - 0.02}) {
             @content;
         }
     }
@@ -42,9 +43,12 @@
 
 @mixin bg($type) {
 
-    @if $type == 'retina' {
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @if $type =='retina' {
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
             @content;
-          }
+        }
     }
 }

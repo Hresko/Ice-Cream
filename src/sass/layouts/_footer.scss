@@ -1,12 +1,16 @@
 .footer {
     padding-top: 32px;
-    padding-bottom: 40px;
     background-color: var(--bgc-accent-ice);
 
     &__adaptive-wrap {
-        // margin-bottom: 60px;
         display: flex;
         flex-direction: column;
+        margin-bottom: 40px;
+
+        @include mq(tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
     &__text-wrap {
@@ -14,6 +18,10 @@
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 40px;
+
+        @include mq(tablet) {
+            max-width: 340px;
+        }
     }
 
     &__upper-text {
@@ -61,15 +69,24 @@
         padding-top: 10px;
         padding-bottom: 10px;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: var(--bgc-accent-ice);
+
+        @include mq(tablet) {
+            flex-direction: row;
+        }
 
         & p {
             font-weight: 700;
             font-size: 14px;
             line-height: 1.85;
             color: var(--cl-txt-second);
+
+            @include mq(tablet) {
+                margin-right: 5px;
+            }
         }
     }
 }
