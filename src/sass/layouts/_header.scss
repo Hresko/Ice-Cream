@@ -50,8 +50,6 @@
 // ========== logo ==========
 
 .logo {
-    display: flex;
-
     @include mq(mobile) {
         margin-right: 60px;
     }
@@ -62,18 +60,6 @@
 
     @include mq(desktop) {
         margin-right: 128px;
-    }
-
-    &__circle {
-        margin-right: 20px;
-        animation: roll-in-left 1s ease-out both;
-    }
-
-    &__name {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        animation: bounce-in-top 1.1s both;
     }
 }
 
