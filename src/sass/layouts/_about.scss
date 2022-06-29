@@ -35,23 +35,7 @@
 
 
 .label-title {
-    margin-bottom: 15px;
-
-    font-family: var(--font-family-title);
-    font-size: 18px;
-    line-height: 1.17em;
-    text-align: center;
-    text-transform: uppercase;
-
-    color: var(--cl-txt-accent-light);
-
-    @include mq(tablet) {
-        font-size: 26px;
-       }
-
-    @include mq(desktop) {
-        font-size: 30px;
-       }
+justify-content: center;
 }
 
 .about__section-title {
@@ -117,30 +101,19 @@
 
 .about__description {
   margin-bottom: 20px;
-  
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.58em;
 
   @include mq(tablet) {
-    font-size: 14px;
     margin-bottom: 32px;
    }
 
-  @include mq(desktop) {
-    font-size: 16px;
-   }
 
   &--color {
     color: var(--cl-txt-second);
 
-    
-
-    @include mq(desktop) {
+     @include mq(desktop) {
       margin-bottom: 40px;
         font-size: 14px;
        }
-
   }
 
 }
@@ -245,7 +218,9 @@
        }
   }
   
-  .label-title__md{
+  .uppertitle__md{
+    justify-content: center;
+
     @include mq(tablet) {
         margin-bottom: 25px;
        }
