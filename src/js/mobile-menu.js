@@ -10,7 +10,7 @@
     menuBtnRef.setAttribute('aria-expanded', !expanded);
     mobileMenuRef.classList.toggle('is-open');
     !expanded ? fixedModalOverflow() : closeModalOverflow();
-    !expanded && setActiveLink(document.querySelectorAll('.navigation-link'));
+    // !expanded && setActiveLink(document.querySelectorAll('.navigation-link'));
   };
 
   menuBtnRef.addEventListener('click', toggleBurgerMenu);
