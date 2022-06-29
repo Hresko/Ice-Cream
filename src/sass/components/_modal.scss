@@ -8,14 +8,14 @@
 
     padding-top: 40px;
     padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
 
     width: calc(100vw - 30px);
     max-height: calc(100vh - 30px);
 
     background: var(--bgc-main);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.12), 3px 3px 3px 3px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 
     overflow-y: auto;
@@ -38,15 +38,15 @@
         left: 50%;
 
         width: 450px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     @include mq(desktop) {
         width: 540px;
         min-height: 600px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     // ========== title ==========
@@ -122,11 +122,12 @@
         display: inline-block;
         margin-bottom: 4px;
 
+        font-weight: 700;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.01em;
 
-        color: var(--cl-txt-main);
+        color: var(--bgc-menu);
     }
 
     &__wrapper {
@@ -145,7 +146,7 @@
         height: 40px;
 
         color: var(--cl-txt-main);
-        border: 1px solid rgba(33, 33, 33, 0.2);
+        border: 1px solid var(--cl-txt-accent-light);
         border-radius: 4px;
 
         transition: border-color var(--slow-anim);
@@ -188,7 +189,7 @@
 
         color: var(--cl-txt-main);
 
-        border: 1px solid rgba(33, 33, 33, 0.2);
+        border: 1px solid var(--cl-txt-accent-light);
         border-radius: 4px;
 
         transition: border-color var(--slow-anim);
@@ -256,7 +257,7 @@
         width: 16px;
         height: 15px;
 
-        border: 2px solid var(--cl-txt-main);
+        border: 2px solid var(--cl-txt-accent-light);
         border-radius: 2px;
 
         transition: border-color var(--slow-anim);
