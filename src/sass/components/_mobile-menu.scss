@@ -8,8 +8,6 @@
     height: 100vh;
     padding-top: 60px;
     padding-bottom: 40px;
-    padding-right: 40px;
-    padding-left: 40px;
 
     display: flex;
     flex-direction: column;
@@ -30,6 +28,7 @@
     @include mq(tablet) {
         min-width: 320px;
         width: calc(320px + 7em);
+        max-width: 418px;
         padding-top: 84px;
     }
 
@@ -119,13 +118,17 @@
 .mobile-menu__navigation {
     & .navigation__list {
         display: inline-block;
+        width: 100%;
     }
 
     & .navigation__item {
-        margin-right: 0;
+        padding-left: 40px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border: 1px solid #E18298;
 
         &:not(:last-child) {
-            margin-bottom: 24px;
+            margin-right: 0;
         }
     }
 
@@ -139,43 +142,9 @@
         line-height: 1.28;
 
         transition: color var(--anim);
-
-        &::after {
-            position: absolute;
-            content: ' ';
-            bottom: -11px;
-            left: -40px;
-            right: -40px;
-
-            height: 1px;
-            width: 320px;
-
-            background-color: #E18298;
-
-            @include mq(tablet) {
-                width: 418px;
-            }
-        }
     }
 
     & .navigation__link--current {
         color: var(--cl-txt-accent-dark);
-
-        &::before {
-            position: absolute;
-            content: ' ';
-            top: -11px;
-            left: -40px;
-            right: -40px;
-
-            height: 1px;
-            width: 320px;
-
-            background-color: #E18298;
-
-            @include mq(tablet) {
-                width: 418px;
-            }
-        }
     }
 }
