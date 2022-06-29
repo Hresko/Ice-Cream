@@ -6,18 +6,38 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: -3px;
+      gap: 3px;
       @include mq(tablet) {
-        margin: -6px;
+        gap: 6px;
       }
       @include mq(desktop) {
-        margin: -8px;
+        gap: 8px;
       }
     }
     &__column {
+
+      width: 44px;
+
+      @include mq(tablet) {
+        width: 104px;
+      }
+      @include mq(desktop) {
+        width: 138px;
+      }
       &:hover, &focus{
         z-index: 2;
       }
+
+      &--wide {
+        width: 89px;
+        @include mq(tablet) {
+          width: 214px;
+        }
+        @include mq(desktop) {
+          width: 283px;
+        }
+      }
+
       &--high {
         transform: translateY(-15%);
       }
@@ -25,15 +45,28 @@
 
     &__picture {
       display: block;
-      z-index: 3;
-      margin: 3px;
 
-      @include mq(tablet) {
-        margin: 6px;
+      &--small {
+        width: 44px;
+        @include mq(tablet) {
+          width: 104px;
+        }
+        @include mq(desktop) {
+          width: 138px;
+        }
       }
-      @include mq(desktop) {
-        margin: 8px;
+
+      &--top {
+        margin-bottom: 3px ;
+        @include mq(tablet) {
+          margin-bottom: 6px;
+        }
+        @include mq(desktop) {
+          margin-bottom: 8px;
+        }
       }
+      z-index: 3;
+      
       &:hover, &focus {
         transform: scale(1.4);
         transition: transform var(--slow-anim);

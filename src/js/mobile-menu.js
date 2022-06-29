@@ -3,23 +3,25 @@
   const menuBtnRef = document.querySelector('[data-menu-button]');
   const mobileMenuRef = document.querySelector('[data-menu]');
 
-  menuBtnRef.addEventListener('click', () => {
+  const toggleBurgerMenu = () => {
     const expanded =
       menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
-
     menuBtnRef.classList.toggle('is-open');
     menuBtnRef.setAttribute('aria-expanded', !expanded);
-
     mobileMenuRef.classList.toggle('is-open');
-  });
+    !expanded ? fixedModalOverflow() : closeModalOverflow();
+    // !expanded && setActiveLink(document.querySelectorAll('.navigation-link'));
+  };
+
+  menuBtnRef.addEventListener('click', toggleBurgerMenu);
 })();
 
-// When clicks anywhere outside of the menu, close it
+// Fixed window when modal opened
 
-// refs.modal.forEach(item => {
-//   item.addEventListener('click', e => {
-//     let currentMenu = e.currentTarget;
-//     const targetMenu = e.target;
-//     closeMenu(currentMenu);
-//   });
-// });
+function fixedModalOverflow() {
+  document.querySelector('body').style.overflow = 'hidden';
+}
+
+function closeModalOverflow() {
+  document.querySelector('body').style.overflow = 'unset';
+}
