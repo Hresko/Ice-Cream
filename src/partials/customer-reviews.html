@@ -8,13 +8,17 @@
                 <input type="radio" name="r" id="r2">
                 <input type="radio" name="r" id="r3">
 
-                <div class="slide s1"><img class="clients__img"
-                        srcset="/src/images/customer/emily.png 85w, /src/images/customer/emily@2x.png 170w"
-                        src="/src/images/customer/emily.png" alt="Emily" sizes="85px">
+                <div class="slide s1">
+                    <source srcset="/src/images/customer/julia.webp 1x, /src/images/customer/julia@2x.webp 2x"
+                        type="image/webp">
+                    <source srcset="/src/images/customer/julia.png 1x, /src/images/customer/julia@2x.png 2x"
+                        type="image/png">
+                    <img class="clients__img" src="/src/images/customer/julia.png" alt="Julia" sizes="85"
+                        loading="lazy">
                     <div class="reviews">
-                        <article class="post-text">Nullam viverra consectetuer. Quisque cursus et,
-                            porttitor risus. Aliquam sem. In
-                            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                        <article class="post-text">Oh, it's the best ice-cream, i love it! It's so tasty! Yes, one of
+                            my top rated spots is a gelato shop. I've always in the mood for something sweet! When you
+                            can't pick one, pick three!!!
                         </article>
                     </div>
                     <div class="customer">
@@ -23,16 +27,20 @@
                             <li class="point__item"></li>
                             <li class="point__item"></li>
                         </ul>
-                        <p class="customer__name">Emily, Los Angeles</p>
+                        <p class="customer__name">Julia, Kiev</p>
                     </div>
                 </div>
-                <div class="slide"><img class="clients__img"
-                        srcset="/src/images/customer/camilla.png 85w, /src/images/customer/camilla@2x.png 170w"
-                        src="/src/images/customer/camilla.png" alt="Camilla" sizes="85px">
+                <div class="slide">
+                    <source srcset="/src/images/customer/olena.webp 1x, /src/images/customer/olena@2x.webp 2x"
+                        type="image/webp">
+                    <source srcset="/src/images/customer/olena.png 1x, /src/images/customer/olena@2x.png 2x"
+                        type="image/png">
+                    <img class="clients__img" src="/src/images/customer/olena.png" alt="Olena" sizes="85"
+                        loading="lazy">
                     <div class="reviews">
-                        <article class="post-text">Nullam viverra consectetuer. Quisque cursus et,
-                            porttitor risus. Aliquam sem. In
-                            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                        <article class="post-text">Choko-Cherry Deluxe ice cream is very tasty. there is a small
+                            bitterness inherent in chocolate. Under the chocolate is a thin layer of cherry jam of the
+                            corresponding color.
                         </article>
                     </div>
                     <div class="customer">
@@ -41,16 +49,20 @@
                             <li class="point__item"></li>
                             <li class="point__item"></li>
                         </ul>
-                        <p class="customer__name">Camilla, Chicago</p>
+                        <p class="customer__name">Olena, Kharkiv</p>
                     </div>
                 </div>
-                <div class="slide"><img class="clients__img"
-                        srcset="/src/images/customer/juliet.png 85w, /src/images/customer/juliet@2x.png 170w"
-                        src="/src/images/customer/juliet.png" alt="Juliet" sizes="85px">
+                <div class="slide">
+                    <source srcset="/src/images/customer/juliet.webp 1x, /src/images/customer/juliet@2x.webp 2x"
+                        type="image/webp">
+                    <source srcset="/src/images/customer/juliet.png 1x, /src/images/customer/juliet@2x.png 2x"
+                        type="image/png">
+                    <img class="clients__img" src="/src/images/customer/juliet.png" alt="Juliet" sizes="85"
+                        loading="lazy">
                     <div class="reviews">
                         <article class="post-text">Nullam viverra consectetuer. Quisque cursus et,
-                            porttitor risus. Aliquam sem. In
-                            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                            porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum
+                            primis in nibh vel risus.
                         </article>
                     </div>
                     <div class="customer">
@@ -64,17 +76,17 @@
                 </div>
                 <div class="pagination">
                     <label for="r1" class="bar">
-                        <svg class="house__icon" width="15" height="12">
+                        <svg class="house__icon" for="r1" width="15" height="12" checked>
                             <use href="/src/images/sprite.svg#home"></use>
                         </svg>
                     </label>
                     <label for="r2" class="bar">
-                        <svg class="house__icon" width="15" height="12">
+                        <svg class="house__icon" for="r2" width="15" height="12">
                             <use href="/src/images/sprite.svg#home"></use>
                         </svg>
                     </label>
                     <label for="r3" class="bar">
-                        <svg class="house__icon" width="15" height="12">
+                        <svg class="house__icon" for="r3" width="15" height="12">
                             <use href="/src/images/sprite.svg#home"></use>
                         </svg>
                     </label>

@@ -12,34 +12,81 @@
     display: flex;
     align-items: center;
 
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 
     font-family: var(--font-family-title);
-    font-size: 30px;
-    line-height: 1.13;
+    font-size: 18px;
+    line-height: 1.167;
     text-transform: uppercase;
 
     color: var(--cl-txt-accent-light);
+
+    @include mq(tablet) {
+        font-size: 26px;
+        line-height: 1.15;
+    }
+
+    @include mq(desktop) {
+        font-size: 30px;
+        line-height: 1.13;
+    }
 }
 
 // <h2>
 .section-title {
     font-family: var(--font-family-title);
     font-size: 34px;
-    line-height: 1.15;
+    line-height: 1.147;
     text-transform: uppercase;
 
     color: var(--cl-txt-accent-dark);
+
+    @include mq(tablet) {
+        font-size: 48px;
+        line-height: 1.146;
+        letter-spacing: 0.06em;
+    }
+
+    @include mq(desktop) {
+        font-size: 58px;
+        line-height: 1.138;
+    }
 }
 
 // <p>
-
-// <p>
-.description {
+.subtitle {
     margin-bottom: 40px;
 
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
-    letter-spacing: 0.02em;
+
+    @include mq(tablet) {
+        font-size: 14px;
+        line-height: 1.176;
+    }
+
+    @include mq(desktop) {
+        font-size: 16px;
+    }
+}
+
+// <p>
+.description {
+    margin-bottom: 40px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.70;
+
+    @include mq(tablet) {
+        font-size: 14px;
+        line-height: 1.174;
+    }
+
+    @include mq(desktop) {
+        font-size: 16px;
+        line-height: 1.76;
+        letter-spacing: 0.02em;
+    }
 }

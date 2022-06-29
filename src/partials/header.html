@@ -1,9 +1,103 @@
 <header class="header" id="header">
   <div class="header__container container">
-    <a class="link" href="./index.html" aria-label="logo company">
-      <svg class="logo" alt="logo Ice Cream" width="199" height="50">
+    <a class="link logo" href="./index.html" aria-label="logo company">
+      <!-- <svg class="logo" alt="logo Ice Cream" width="199" height="50">
         <use href="./images/sprite.svg#logo"></use>
-      </svg>
+      </svg> -->
+      <div class="logo__circle">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="
+                ../src/images/logo/logo-circle.webp    1x,
+                ../src/images/logo/logo-circle@2x.webp 2x" type="image/webp" />
+          <img class="logo-img logo-img--circle" srcset="
+                ../src/images/logo/logo-circle.png    50w,
+                ../src/images/logo/logo-circle@2x.png 100w" src="../src/images/logo/logo-circle.png"
+            sizes="(min-width:1200px) 50px, 100vw" alt="Ice-cream circle" width="50" height="50" loading="lazy" />
+        </picture>
+      </div>
+      <div class="logo__name">
+        <picture class="logo-img logo-img--name">
+          <source media="(min-width: 1200px)" srcset="
+                              ../src/images/logo/logo-name.webp    1x,
+                              ../src/images/logo/logo-name@2x.webp 2x" type="image/webp" />
+          <img class="logo-img logo-img--name" srcset="
+                              ../src/images/logo/logo-name.png    129w,
+                              ../src/images/logo/logo-name@2x.png 258w" src="../src/images/logo/logo-name.png"
+            sizes="(min-width:1200px) 129px, 100vw" alt="Icecream" width="129" height="18" loading="lazy" />
+        </picture>
+        <!-- <picture class="logo-img logo-img--1">
+          <source media="(min-width: 1200px)" srcset="
+                      ../src/images/logo/logo-1.webp    1x,
+                      ../src/images/logo/logo-1@2x.webp 2x" type="image/webp" />
+          <img class="logo-img logo-img--1" srcset="
+                      ../src/images/logo/logo-1.png    8w,
+                      ../src/images/logo/logo-1@2x.png 16w" src="../src/images/logo/logo-1.png"
+            sizes="(min-width:1200px) 8px, 100vw" alt="I" width="8" height="18" loading="lazy" />
+        </picture> -->
+        <!-- <picture class="logo-img logo-img--2">
+          <source media="(min-width: 1200px)" srcset="
+                            ../src/images/logo/logo-2.webp    1x,
+                            ../src/images/logo/logo-2@2x.webp 2x" type="image/webp" />
+          <img class="logo-img logo-img--2" srcset="
+                            ../src/images/logo/logo-2.png    16w,
+                            ../src/images/logo/logo-2@2x.png 32w" src="../src/images/logo/logo-2.png"
+            sizes="(min-width:1200px) 16px, 100vw" alt="c" width="16" height="18" loading="lazy" />
+        </picture>
+        <picture class="logo-img logo-img--3">
+          <source media="(min-width: 1200px)" srcset="
+                            ../src/images/logo/logo-3.webp    1x,
+                            ../src/images/logo/logo-3@2x.webp 2x" type="image/webp" />
+          <img class="logo-img logo-img--3" srcset="
+                            ../src/images/logo/logo-3.png    14w,
+                            ../src/images/logo/logo-3@2x.png 28w" src="../src/images/logo/logo-3.png"
+            sizes="(min-width:1200px) 14px, 100vw" alt="e" width="14" height="18" loading="lazy" />
+        </picture>
+        <picture class="logo-img logo-img--4">
+          <source media="(min-width: 1200px)" srcset="
+                            ../src/images/logo/logo-4.webp    1x,
+                            ../src/images/logo/logo-4@2x.webp 2x" type="image/webp" />
+          <img class="logo-img logo-img--4" srcset="
+                            ../src/images/logo/logo-4.png    16w,
+                            ../src/images/logo/logo-4@2x.png 32w" src="../src/images/logo/logo-4.png"
+            sizes="(min-width:1200px) 16px, 100vw" alt="c" width="16" height="18" loading="lazy" />
+        </picture>
+        <picture class="logo-img logo-img--5">
+          <source media="(min-width: 1200px)" srcset="
+                            ../src/images/logo/logo-5.webp    1x,
+                            ../src/images/logo/logo-5@2x.webp 2x" type="image/webp" />
+          <img class="logo-img logo-img--5" srcset="
+                            ../src/images/logo/logo-5.png    17w,
+                            ../src/images/logo/logo-5@2x.png 34w" src="../src/images/logo/logo-5.png"
+            sizes="(min-width:1200px) 17px, 100vw" alt="r" width="17" height="18" loading="lazy" />
+        </picture>
+        <picture class="logo-img logo-img--6">
+          <source media="(min-width: 1200px)" srcset="
+                            ../src/images/logo/logo-6.webp    1x,
+                            ../src/images/logo/logo-6@2x.webp 2x" type="image/webp" />
+          <img class="logo-img logo-img--6" srcset="
+                            ../src/images/logo/logo-6.png    14w,
+                            ../src/images/logo/logo-6@2x.png 28w" src="../src/images/logo/logo-6.png"
+            sizes="(min-width:1200px) 14px, 100vw" alt="e" width="14" height="18" loading="lazy" />
+        </picture>
+        <picture class="logo-img logo-img--7">
+          <source media="(min-width: 1200px)" srcset="
+                            ../src/images/logo/logo-7.webp    1x,
+                            ../src/images/logo/logo-7@2x.webp 2x" type="image/webp" />
+          <img class="logo-img logo-img--7" srcset="
+                            ../src/images/logo/logo-7.png    18w,
+                            ../src/images/logo/logo-7@2x.png 36w" src="../src/images/logo/logo-7.png"
+            sizes="(min-width:1200px) 18px, 100vw" alt="a" width="18" height="18" loading="lazy" />
+        </picture>
+        <picture class="logo-img logo-img--8">
+          <source media="(min-width: 1200px)" srcset="
+                            ../src/images/logo/logo-8.webp    1x,
+                            ../src/images/logo/logo-8@2x.webp 2x" type="image/webp" />
+          <img class="logo-img logo-img--8" srcset="
+                            ../src/images/logo/logo-8.png    20w,
+                            ../src/images/logo/logo-8@2x.png 40w" src="../src/images/logo/logo-8.png"
+            sizes="(min-width:1200px) 20px, 100vw" alt="m" width="20" height="18" loading="lazy" />
+        </picture> -->
+      </div>
     </a>
     <nav class="navigation">
       <ul class="navigation__list list">
@@ -21,7 +115,7 @@
           <a class="navigation__link link" href="#products" aria-label="Our products">Our products</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link link" href="#contact" aria-label="Contact">Contact</a>
+          <a class="navigation__link link" href="#contacts" aria-label="Contact">Contact</a>
         </li>
       </ul>
     </nav>
