@@ -2,26 +2,26 @@
   display: block;
   padding: 0;
 
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     padding-bottom: 20px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     padding: 60px 0;
   }
 }
 
 .slider__reviews {
   width: 100%;
-  height: 517px;
+  height: 514px;
   position: relative;
   overflow: hidden;
 
-  @media screen and (min-width: 768px) {
-    height: 362px;
+  @include mq(tablet) {
+    height: 360px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     height: 350px;
   }
 }
@@ -40,6 +40,10 @@
   padding-top: 16px;
   left: 50%;
   transform: translateX(-50%);
+
+  @include mq(tablet) {
+    padding-top: 32px;
+  }
 }
 
 .bar {
@@ -64,11 +68,16 @@
   display: block;
 }
 
+input[name='r'] {
+  position: absolute;
+  visibility: hidden;
+}
+
 .bar:hover .house__icon,
 .bar:focus .house__icon {
   fill: var(--cl-txt-accent-dark);
   opacity: inherit;
-  background-color: #fff;
+  background-color: var(--cl-txt-white);
 }
 
 input[name='r'] {
@@ -90,11 +99,12 @@ input[name='r'] {
 .clients__img {
   display: block;
   margin: 0 auto;
+  transition: var(--anim);
 }
 
 .reviews {
   position: relative;
-  margin: 0 auto;
+
   max-width: 280px;
   height: 308px;
   width: 100%;
@@ -106,18 +116,20 @@ input[name='r'] {
   padding-top: 43px;
   padding-bottom: 17px;
   margin-top: 32px;
-  background-color: #fafafa;
+  background-color: var(--bgc-second);
 
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     max-width: 620px;
     height: 164px;
     width: 100%;
+    margin: 20px auto 0;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     max-width: 968px;
     height: 138px;
     width: 100%;
+    margin: 16px auto 0;
   }
 }
 
@@ -131,30 +143,30 @@ input[name='r'] {
     to bottom,
     transparent 0,
     transparent 30px,
-    #e1e1e1 30px,
-    #e1e1e1 31px
+    var(--cl-txt-light) 30px,
+    var(--cl-txt-light) 31px
   );
+  transition: var(--anim);
 
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     max-width: 608px;
     height: 108px;
     width: 100%;
     text-align: center;
     letter-spacing: 0.04em;
-    color: #000;
     padding: 0 40px;
     font-size: 14px;
     font-weight: 500;
     line-height: 2.14;
+    transition: var(--anim);
   }
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     max-width: 822px;
     height: 75px;
     width: 100%;
     text-align: center;
     letter-spacing: 0.04em;
-    color: #000;
     padding: 0 40px;
     font-size: 16px;
     font-weight: 500;
@@ -168,7 +180,6 @@ input[name='r'] {
   font-size: 14px;
   line-height: 1.86;
   padding-top: 16px;
-  color: #000000;
 }
 
 .post-text::before {
@@ -182,10 +193,10 @@ input[name='r'] {
   top: 30px;
   left: 43px;
   background-repeat: no-repeat;
-  color: #e1e1e1;
+  color: var(--cl-txt-light);
   opacity: 0.6;
 
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     background-image: url(/src/images/customer/quotes-tab.png);
     width: 60.35px;
     height: 40px;
@@ -193,7 +204,7 @@ input[name='r'] {
     left: 7px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     background-image: url(/src/images/customer/quotes-mob-desk.png);
     width: 54px;
     height: 40px;
@@ -211,7 +222,7 @@ input[name='r'] {
   display: flex;
   justify-content: center;
 
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @include mq(tablet-only) {
     padding-top: 4px;
   }
 }
