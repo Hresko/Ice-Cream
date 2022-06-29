@@ -2,7 +2,7 @@
 .about{
     background-color: var(--bgc-accent-ice); 
     background-repeat: no-repeat;
-    background-position: 0px 74%;
+    background-position: 50% 74%;
     // background-size: 280px 133px;
     background-size: contain;
     background-image: url(/src/images/about/about-bg-milk__sm.png);
@@ -21,7 +21,7 @@
     @include mq(desktop) {
         // background-size: 1200px 521px;
         background-size: contain;
-        background-position: 0px 85%;
+        background-position: 50% 85%;
         background-image: url(/src/images/about/about-bg-milk__lg.png);
         background-image: url(/src/images/about/webp/about-bg-milk__lg.webp);
 
