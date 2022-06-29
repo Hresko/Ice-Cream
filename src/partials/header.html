@@ -16,7 +16,16 @@
         </picture>
       </div>
       <div class="logo__name">
-        <picture class="logo-img logo-img--1">
+        <picture class="logo-img logo-img--name">
+          <source media="(min-width: 1200px)" srcset="
+                              ../src/images/logo/logo-name.webp    1x,
+                              ../src/images/logo/logo-name@2x.webp 2x" type="image/webp" />
+          <img class="logo-img logo-img--name" srcset="
+                              ../src/images/logo/logo-name.png    129w,
+                              ../src/images/logo/logo-name@2x.png 258w" src="../src/images/logo/logo-name.png"
+            sizes="(min-width:1200px) 129px, 100vw" alt="Icecream" width="129" height="18" loading="lazy" />
+        </picture>
+        <!-- <picture class="logo-img logo-img--1">
           <source media="(min-width: 1200px)" srcset="
                       ../src/images/logo/logo-1.webp    1x,
                       ../src/images/logo/logo-1@2x.webp 2x" type="image/webp" />
@@ -24,8 +33,8 @@
                       ../src/images/logo/logo-1.png    8w,
                       ../src/images/logo/logo-1@2x.png 16w" src="../src/images/logo/logo-1.png"
             sizes="(min-width:1200px) 8px, 100vw" alt="I" width="8" height="18" loading="lazy" />
-        </picture>
-        <picture class="logo-img logo-img--2">
+        </picture> -->
+        <!-- <picture class="logo-img logo-img--2">
           <source media="(min-width: 1200px)" srcset="
                             ../src/images/logo/logo-2.webp    1x,
                             ../src/images/logo/logo-2@2x.webp 2x" type="image/webp" />
@@ -87,7 +96,7 @@
                             ../src/images/logo/logo-8.png    20w,
                             ../src/images/logo/logo-8@2x.png 40w" src="../src/images/logo/logo-8.png"
             sizes="(min-width:1200px) 20px, 100vw" alt="m" width="20" height="18" loading="lazy" />
-        </picture>
+        </picture> -->
       </div>
     </a>
     <nav class="navigation">
