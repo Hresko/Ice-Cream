@@ -40,17 +40,8 @@
 }
 
 .advantages__title {
-    font-family: 'Titan One';
-    font-style: normal;
+    
     font-weight: 400;
-    font-size: 36px;
-    line-height: 41px;
-    
-    text-transform: uppercase;
-
-    color: var(--cl-txt-accent-dark);
-
-    
     margin-bottom: 4px;
 
     transition: var(--slow-anim);
@@ -167,11 +158,6 @@
 
     font-family: 'DM Sans';
     font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 170%;
-
-
 
     color: var(--cl-txt-main);
 @include mq(tablet-only) {
