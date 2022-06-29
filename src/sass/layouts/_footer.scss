@@ -23,6 +23,10 @@
             max-width: 340px;
             margin-bottom: 0;
         }
+
+        @include mq(desktop) {
+            max-width: 100%;
+        }
     }
 
     &__upper-text {
@@ -82,11 +86,13 @@
         & p {
             font-weight: 700;
             font-size: 14px;
-            line-height: 1.85;
+            line-height: 1.52;
+            letter-spacing: 0.02em;
             color: var(--cl-txt-second);
 
             @include mq(tablet) {
                 margin-right: 5px;
+                line-height: 1.85;
             }
         }
     }

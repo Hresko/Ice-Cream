@@ -7,8 +7,13 @@
     }
 
     &__item {
-        width: 34px;
-        height: 34px;
+        width: 32px;
+        height: 32px;
+
+        @include mq(tablet) {
+            width: 34px;
+            height: 34px;
+        }
     }
 
     &__icon {
