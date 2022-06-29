@@ -23,6 +23,7 @@
     &.is-open {
         visibility: visible;
         transform: translateX(0);
+        transition: transform var(--slow-anim);
     }
 
     @include mq(tablet) {
