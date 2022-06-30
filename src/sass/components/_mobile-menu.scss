@@ -16,14 +16,11 @@
     transition: transform var(--slow-anim);
 
     background-color: var(--bgc-menu);
-
-    visibility: hidden;
     overflow-y: scroll;
 
     &.is-open {
         visibility: visible;
         transform: translateX(0);
-        transition: transform var(--slow-anim);
     }
 
     @include mq(tablet) {
