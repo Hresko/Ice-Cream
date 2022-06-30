@@ -45,7 +45,7 @@
 
     &__picture {
       display: block;
-
+      transition: transform var(--slow-anim);
       &--small {
         width: 44px;
         @include mq(tablet) {
