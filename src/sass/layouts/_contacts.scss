@@ -1,21 +1,14 @@
 .contacts {
-
     @include mq(mobile) {
-        background-image: linear-gradient(to top,
-                #FFF5F6 78%,
-                #ffffff 22%, );
+        background-image: linear-gradient(#fff,#fff 340px,#fff5f6 340px,#fff5f6);
     }
 
     @include mq(tablet) {
-        background-image: linear-gradient(to top,
-                #FFF5F6 58%,
-                #ffffff 42%, );
+        background-image: linear-gradient(#fff,#fff 338px,#fff5f6 338px,#fff5f6);
     }
 
     @include mq(desktop) {
-        background-image: linear-gradient(to top,
-                #FFF5F6 79%,
-                #ffffff 21%, );
+        background-image: linear-gradient(#fff,#fff 160px,#fff5f6 160px,#fff5f6);
     }
 }
 

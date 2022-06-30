@@ -69,7 +69,7 @@
         position: fixed;
         top: 27px;
         right: 20px;
-        z-index: 12;
+        z-index: 16;
 
         @include mq(tablet) {
             top: 47px;
