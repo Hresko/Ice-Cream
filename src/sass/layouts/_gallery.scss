@@ -1,75 +1,89 @@
-
 .gallery {
-    background-image: linear-gradient(to bottom,rgba(255, 245, 246, 1) ,rgb(255, 255, 255) );
+  background-image: linear-gradient(to bottom, rgba(255, 245, 246, 1), rgb(255, 255, 255));
 
-    &__columns {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 3px;
+  &__columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+
+    @include mq(tablet) {
+      gap: 6px;
+    }
+
+    @include mq(desktop) {
+      gap: 8px;
+    }
+  }
+
+  &__column {
+
+    width: 44px;
+
+    @include mq(tablet) {
+      width: 104px;
+    }
+
+    @include mq(desktop) {
+      width: 138px;
+    }
+
+    &:hover,
+    &focus {
+      z-index: 2;
+    }
+
+    &--wide {
+      width: 89px;
+
       @include mq(tablet) {
-        gap: 6px;
+        width: 214px;
       }
+
       @include mq(desktop) {
-        gap: 8px;
+        width: 283px;
       }
     }
-    &__column {
 
+    &--high {
+      transform: translateY(-15%);
+    }
+  }
+
+  &__picture {
+    display: block;
+
+    &--small {
       width: 44px;
 
       @include mq(tablet) {
         width: 104px;
       }
+
       @include mq(desktop) {
         width: 138px;
       }
-      &:hover, &focus{
-        z-index: 2;
+    }
+
+    &--top {
+      margin-bottom: 3px;
+
+      @include mq(tablet) {
+        margin-bottom: 6px;
       }
 
-      &--wide {
-        width: 89px;
-        @include mq(tablet) {
-          width: 214px;
-        }
-        @include mq(desktop) {
-          width: 283px;
-        }
-      }
-
-      &--high {
-        transform: translateY(-15%);
+      @include mq(desktop) {
+        margin-bottom: 8px;
       }
     }
 
-    &__picture {
-      display: block;
+
+    z-index: 3;
+
+    &:hover,
+    &focus {
+      transform: scale(1.4);
       transition: transform var(--slow-anim);
-      &--small {
-        width: 44px;
-        @include mq(tablet) {
-          width: 104px;
-        }
-        @include mq(desktop) {
-          width: 138px;
-        }
-      }
-
-      &--top {
-        margin-bottom: 3px ;
-        @include mq(tablet) {
-          margin-bottom: 6px;
-        }
-        @include mq(desktop) {
-          margin-bottom: 8px;
-        }
-      }
-      z-index: 3;
-      
-      &:hover, &focus {
-        transform: scale(1.4);
-        transition: transform var(--slow-anim);
-        }
     }
+  }
 }
