@@ -13,7 +13,6 @@
 
         & .mobile-btn {
             top: 20px;
-            z-index: 16;
 
             @include mq(tablet) {
                 top: 40px;
