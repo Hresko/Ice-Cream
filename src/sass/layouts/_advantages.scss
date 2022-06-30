@@ -1,30 +1,23 @@
 .advantages {
-
     padding-top: 40px;
     background-color: var(--bgc-accent-ice);
 }
 
 .advantages__container {
-
     margin-left: auto;
     margin-right: auto;
 }
 
-
 .advantages__list {
-    padding: 0;
-
-    @include mq(tablet-only){
+    @include mq(tablet-only) {
         display: flex;
         justify-content: space-between;
-       
     }
 
-         @include mq(desktop) {
-             display: flex;
-             justify-content: space-around;
-    
-         }
+    @include mq(desktop) {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 .advantages__item {
@@ -34,135 +27,120 @@
         margin-bottom: 0;
     }
 
-       
-
-   
+    @include mq(tablet) {
+        margin-bottom: 0;
+    }
 }
 
 .advantages__title {
-    
-    font-weight: 400;
     margin-bottom: 4px;
 
     transition: var(--slow-anim);
 
     @include mq(tablet-only) {
-            margin-bottom: 13px;
-    
+        margin-bottom: 13px;
+    }
+
+    @include mq(desktop) {
+        margin-bottom: 16px;
+    }
+}
+
+.advantages__icecream {
+    &::before {
+        content: '';
+        display: block;
+        width: 33px;
+        height: 50px;
+
+        margin-bottom: 16px;
+
+        @include mq(tablet-only) {
+            margin-bottom: 36px;
+
         }
-    
+
         @include mq(desktop) {
-            margin-bottom: 16px;
-    
+            margin-bottom: 40px;
+
         }
 
-    
-   
+        background-image: url(/src/images/advantages/icecream.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        fill: var(--cl-txt-accent-dark);
+    }
+
+    &:first-child {
+        margin-top: 0;
+    }
 }
 
-.advantages__icecream{
+.advantages__apples {
     &::before {
-            content: '';
-            display: block;
-            width: 33px;
-            height: 50px;
-    
-            margin-bottom: 16px;
-            @include mq(tablet-only) {
-                    margin-bottom: 36px;
-            
-                }
-            
-                @include mq(desktop) {
-                    margin-bottom: 40px;
-            
-                }
-    
-            background-image: url(/src/images/advantages/icecream.svg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            fill: var(--cl-txt-accent-dark);
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
 
-            
+        margin-bottom: 16px;
 
-              
+        @include mq(tablet-only) {
+            margin-bottom: 36px;
+
         }
 
-                 &:first-child {
-                     margin-top: 0;
-                 }
+        @include mq(desktop) {
+            margin-bottom: 40px;
+        }
 
-                                
+        background-image: url(/src/images/advantages/apples.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        fill: var(--cl-txt-accent-dark);
+    }
 }
 
-.advantages__apples{
+.advantages__heart {
     &::before {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 50px;
-    
-            margin-bottom: 16px;
-            @include mq(tablet-only) {
-                    margin-bottom: 36px;
-            
-                }
-            
-                @include mq(desktop) {
-                    margin-bottom: 40px;
-            
-                }
-    
-            background-image: url(/src/images/advantages/apples.svg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            fill: var(--cl-txt-accent-dark);
+        content: '';
+        display: block;
+        width: 44px;
+        height: 50px;
 
-           
+        margin-bottom: 16px;
+
+        @include mq(tablet-only) {
+            margin-bottom: 36px;
+
         }
-}
 
-.advantages__heart{
-    &::before {
-            content: '';
-            display: block;
-            width: 44px;
-            height: 50px;
-    
-            margin-bottom: 16px;
-            @include mq(tablet-only) {
-                    margin-bottom: 36px;
-            
-                }
-            
-                @include mq(desktop) {
-                    margin-bottom: 40px;
-            
-                }
-    
-            background-image: url(/src/images/advantages/heart.svg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            fill: var(--cl-txt-accent-dark);
+        @include mq(desktop) {
+            margin-bottom: 40px;
 
-            
-          
         }
+
+        background-image: url(/src/images/advantages/heart.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        fill: var(--cl-txt-accent-dark);
+    }
 }
 
 
 .advantages__text {
     width: 230px;
-    height: 36px;
-
-
-    font-family: 'DM Sans';
-    font-style: normal;
-
     color: var(--cl-txt-main);
-@include mq(tablet-only) {
-        width: 162px;
 
+    &:last-child {
+        margin-bottom: 0;
     }
 
+    @include mq(tablet) {
+        margin-bottom: 0;
+    }
+
+    @include mq(tablet-only) {
+        width: 162px;
+    }
 }

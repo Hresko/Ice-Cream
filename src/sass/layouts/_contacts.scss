@@ -1,30 +1,32 @@
 .contacts {
 
     @include mq(mobile) {
-        background-image: linear-gradient(to top, 
-        #FFF5F6 78%,
-        #ffffff 22%,);
+        background-image: linear-gradient(to top,
+                #FFF5F6 78%,
+                #ffffff 22%, );
     }
 
     @include mq(tablet) {
         background-image: linear-gradient(to top,
-        #FFF5F6 58%,
-        #ffffff 42%, );
+                #FFF5F6 58%,
+                #ffffff 42%, );
     }
 
     @include mq(desktop) {
         background-image: linear-gradient(to top,
-        #FFF5F6 79%,
-        #ffffff 21%, );
+                #FFF5F6 79%,
+                #ffffff 21%, );
     }
 }
 
 .contact {
     align-items: center;
     list-style: none;
+    margin-bottom: 32px;
 
     @include mq(tablet) {
         display: flex;
+        margin-bottom: 60px;
     }
 }
 
@@ -32,13 +34,14 @@
     padding: 40px 32px;
     background: var(--bgc-main);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;   
+    border-radius: 24px;
 }
 
 .contact__item:not(:last-child) {
     @include mq(mobile) {
         margin-bottom: 20px;
     }
+
     @include mq(tablet) {
         margin-right: 32px;
         margin-bottom: 0;
@@ -59,7 +62,7 @@
     border-radius: 4px;
 
     @include mq(mobile) {
-        font-size: 12px;       
+        font-size: 12px;
     }
 
     @include mq(tablet) {
@@ -72,13 +75,14 @@
     height: 16px;
     color: var(--cl-txt-white);
     background-color: var(--bgc-accent-coffee);
+
     @include mq(tablet) {
         width: 100%;
         height: 100%;
         max-width: 73px;
         max-height: 28px;
     }
-    
+
     @include mq(desktop) {
         max-width: 75.1px;
     }
@@ -116,7 +120,7 @@
     margin-bottom: 24px;
 }
 
-.contact-date__item:not(:last-child){
+.contact-date__item:not(:last-child) {
     margin-bottom: 8px;
 }
 
@@ -130,7 +134,7 @@
     color: var(--cl-txt-main);
 
     @include mq(mobile) {
-        font-size: 12px;   
+        font-size: 12px;
     }
 
     @include mq(tablet) {
@@ -145,7 +149,7 @@
 .contact__text {
     font-family: var(--font-family-main);
     font-style: normal;
-    font-weight: 500;  
+    font-weight: 500;
     color: var(--cl-txt-second);
     margin-bottom: 24px;
 
@@ -173,7 +177,7 @@
     color: var(--cl-txt-second);
     text-decoration: none;
     transition: color var(--anim);
-    
+
     &:hover,
     &:focus {
         color: var(--cl-txt-accent-dark);
@@ -188,9 +192,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 40px;
-   
+
     @include mq(tablet) {
         display: flex;
     }
@@ -199,7 +201,7 @@
 .contact-info__item:not(:last-child) {
 
     @include mq(mobile) {
-       margin-bottom: 10px;
+        margin-bottom: 10px;
     }
 
     @include mq(tablet) {
@@ -211,5 +213,3 @@
         margin-right: 12px;
     }
 }
-
-
