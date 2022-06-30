@@ -1,11 +1,16 @@
-.scroll-to-top {
+.fix-down {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    width: 100vw;
+}
 
+.scroll-to-top {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
 
     width: 25px;
     height: 25px;
